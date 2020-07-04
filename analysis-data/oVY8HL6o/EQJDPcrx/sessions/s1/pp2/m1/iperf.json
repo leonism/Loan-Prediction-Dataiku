@@ -1,0 +1,160 @@
+{
+    "usedGridSearch": true, 
+    "probaAware": true, 
+    "gridSize": 5, 
+    "modelInputNRows": 456, 
+    "modelInputNCols": 27, 
+    "modelInputMemory": 98496, 
+    "gridCells": [
+        {
+            "scoreTimeStd": 0.009463379711052261, 
+            "scoreTime": 0.02866666666666667, 
+            "fitTime": 0.021, 
+            "score": 0.7552357841206936, 
+            "params": {
+                "penalty": "l2", 
+                "C": 100.0
+            }, 
+            "fitTimeStd": 0.010033277962194942, 
+            "scoreStd": 0.06358603704148211
+        }, 
+        {
+            "scoreTimeStd": 0.0012472191289246482, 
+            "scoreTime": 0.03766666666666666, 
+            "fitTime": 0.009, 
+            "score": 0.7555287971407992, 
+            "params": {
+                "penalty": "l2", 
+                "C": 1.0
+            }, 
+            "fitTimeStd": 0.0045460605656619515, 
+            "scoreStd": 0.0662116384023579
+        }, 
+        {
+            "scoreTimeStd": 0.00771722460186015, 
+            "scoreTime": 0.03666666666666666, 
+            "fitTime": 0.014333333333333335, 
+            "score": 0.7431572121998988, 
+            "params": {
+                "penalty": "l2", 
+                "C": 0.01
+            }, 
+            "fitTimeStd": 0.006798692684790381, 
+            "scoreStd": 0.05438813533827326
+        }, 
+        {
+            "scoreTimeStd": 0.005354126134736337, 
+            "scoreTime": 0.032, 
+            "fitTime": 0.011999999999999999, 
+            "score": 0.7562494445140132, 
+            "params": {
+                "penalty": "l2", 
+                "C": 0.1
+            }, 
+            "fitTimeStd": 0.0008164965809277262, 
+            "scoreStd": 0.061200310553925115
+        }, 
+        {
+            "scoreTimeStd": 0.011953614051360736, 
+            "scoreTime": 0.02733333333333333, 
+            "fitTime": 0.009333333333333332, 
+            "score": 0.7562694967455003, 
+            "params": {
+                "penalty": "l2", 
+                "C": 10.0
+            }, 
+            "fitTimeStd": 0.001247219128924647, 
+            "scoreStd": 0.0641478012940342
+        }
+    ], 
+    "lmCoefficients": {
+        "interceptStderr": null, 
+        "interceptTstat": null, 
+        "rescaledInterceptCoef": 0.6391760495196399, 
+        "rescaledCoefs": [
+            2.9551310796085074e-05, 
+            7.959614010166672e-05, 
+            -4.032785907928885, 
+            2.2474619489453312e-06, 
+            0.0049456571279418255, 
+            -0.001852744378963777, 
+            0.14320128284363223, 
+            3.816739113157501e-05, 
+            -1.4661508937271341, 
+            -0.4764333511073289, 
+            0.0562542872497476, 
+            0.05320547489778757, 
+            -0.0631934372367694, 
+            0.48890287925542947, 
+            0.8153388369846003, 
+            -1.257975391329188, 
+            -0.06097879410624029, 
+            0.0590918924244828, 
+            0.048153226592662246, 
+            -0.14716142869206597, 
+            0.06403585930333505, 
+            0.25623220921901363, 
+            -0.1932480246343687, 
+            -0.23503582672376971, 
+            0.1542821077467058
+        ], 
+        "variables": [
+            "ApplicantIncome", 
+            "CoapplicantIncome", 
+            "Credit_History", 
+            "LoanAmount", 
+            "Loan_Amount_Term", 
+            "MonthlyLoan", 
+            "MonthlyLoan_Percentage", 
+            "TotalIncome", 
+            "dummy:Property_Area:Semiurban", 
+            "dummy:Property_Area:Urban", 
+            "dummy:Gender:Male", 
+            "dummy:Gender:Female", 
+            "dummy:Gender:N/A", 
+            "dummy:Married:Yes", 
+            "dummy:Married:No", 
+            "dummy:Married:N/A", 
+            "dummy:Self_Employed:No", 
+            "dummy:Self_Employed:Yes", 
+            "dummy:Self_Employed:N/A", 
+            "dummy:Education:Graduate", 
+            "dummy:Dependents:0", 
+            "dummy:Dependents:1", 
+            "dummy:Dependents:2", 
+            "dummy:Dependents:3+", 
+            "dummy:Dependents:N/A"
+        ], 
+        "interceptCoef": 0.04626632491083071, 
+        "interceptPvalue": null, 
+        "coefs": [
+            0.19959777138965318, 
+            0.20114451895536634, 
+            -1.4645981597139535, 
+            0.20134673771230632, 
+            0.31632338272552524, 
+            -1.0461567339416284, 
+            1.2703491570055445, 
+            0.26618718885083165, 
+            -1.4661508937271341, 
+            -0.4764333511073289, 
+            0.0562542872497476, 
+            0.05320547489778757, 
+            -0.0631934372367694, 
+            0.48890287925542947, 
+            0.8153388369846003, 
+            -1.257975391329188, 
+            -0.06097879410624029, 
+            0.0590918924244828, 
+            0.048153226592662246, 
+            -0.14716142869206597, 
+            0.06403585930333505, 
+            0.25623220921901363, 
+            -0.1932480246343687, 
+            -0.23503582672376971, 
+            0.1542821077467058
+        ]
+    }, 
+    "gridBestScore": 0.7562694967455003, 
+    "modelInputIsSparse": false
+}

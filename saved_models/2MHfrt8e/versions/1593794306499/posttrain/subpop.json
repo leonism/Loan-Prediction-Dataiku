@@ -1,0 +1,13 @@
+{
+    "onSample": false, 
+    "sampleSize": 10000, 
+    "computedOn": "test set", 
+    "features": [
+        {
+            "folderPath": "subpop-cf50c6f3fbc560521fc63b98b4a0edfa", 
+            "feature": "Property_Area", 
+            "done_at": 1593791675101
+        }
+    ], 
+    "randomState": 1337
+}

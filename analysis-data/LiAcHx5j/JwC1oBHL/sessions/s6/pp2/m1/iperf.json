@@ -1,0 +1,118 @@
+{
+    "usedGridSearch": true, 
+    "probaAware": true, 
+    "gridSize": 5, 
+    "modelInputNRows": 416, 
+    "modelInputNCols": 13, 
+    "modelInputMemory": 43264, 
+    "gridCells": [
+        {
+            "scoreTimeStd": 0.0016329931618554523, 
+            "scoreTime": 0.028999999999999998, 
+            "fitTime": 0.012333333333333333, 
+            "score": 0.7940289017897647, 
+            "params": {
+                "penalty": "l2", 
+                "C": 100.0
+            }, 
+            "fitTimeStd": 0.0012472191289246474, 
+            "scoreStd": 0.008536821926356297
+        }, 
+        {
+            "scoreTimeStd": 0.005887840577551897, 
+            "scoreTime": 0.028999999999999998, 
+            "fitTime": 0.004666666666666667, 
+            "score": 0.7936393834898272, 
+            "params": {
+                "penalty": "l2", 
+                "C": 1.0
+            }, 
+            "fitTimeStd": 0.0004714045207910317, 
+            "scoreStd": 0.012619284202488004
+        }, 
+        {
+            "scoreTimeStd": 0.01067707825203131, 
+            "scoreTime": 0.030000000000000002, 
+            "fitTime": 0.011999999999999999, 
+            "score": 0.7941126498960037, 
+            "params": {
+                "penalty": "l2", 
+                "C": 10.0
+            }, 
+            "fitTimeStd": 0.00282842712474619, 
+            "scoreStd": 0.009127695972105715
+        }, 
+        {
+            "scoreTimeStd": 0.003299831645537222, 
+            "scoreTime": 0.02866666666666667, 
+            "fitTime": 0.010333333333333333, 
+            "score": 0.7817160310619613, 
+            "params": {
+                "penalty": "l2", 
+                "C": 0.1
+            }, 
+            "fitTimeStd": 0.0033993463423951896, 
+            "scoreStd": 0.008928298463180781
+        }, 
+        {
+            "scoreTimeStd": 0.003299831645537222, 
+            "scoreTime": 0.011666666666666667, 
+            "fitTime": 0.006666666666666667, 
+            "score": 0.7639903471681316, 
+            "params": {
+                "penalty": "l2", 
+                "C": 0.01
+            }, 
+            "fitTimeStd": 0.0024944382578492943, 
+            "scoreStd": 0.014687639385407007
+        }
+    ], 
+    "lmCoefficients": {
+        "interceptStderr": null, 
+        "interceptTstat": null, 
+        "rescaledInterceptCoef": 1.5995949263927967, 
+        "rescaledCoefs": [
+            4.3468153773517e-05, 
+            4.000371431414552e-05, 
+            6.0379330252093375e-06, 
+            -0.003090578179016859, 
+            -0.039314890106437746, 
+            3.887917003105174e-05, 
+            0.003106103144882286, 
+            0.15207211617664354, 
+            -1.2056783461731406, 
+            -0.30366275263533477, 
+            -0.084159638859512
+        ], 
+        "variables": [
+            "TotalIncome", 
+            "CoapplicantIncome", 
+            "LoanAmount", 
+            "MonthlyLoan", 
+            "MonthlyLoan_MonthTerm_Ratio", 
+            "ApplicantIncome", 
+            "Loan_Amount_Term", 
+            "MonthlyLoan_Percentage", 
+            "dummy:Property_Area:Semiurban", 
+            "dummy:Property_Area:Urban", 
+            "dummy:Credit_History:1"
+        ], 
+        "interceptCoef": 0.5470929241883449, 
+        "interceptPvalue": null, 
+        "coefs": [
+            0.2677215221580687, 
+            0.10858246513558147, 
+            0.4517767970959365, 
+            -1.0898653219279737, 
+            -1.4382999437339798, 
+            0.22945435466733938, 
+            0.19991390943084952, 
+            0.9974960400061204, 
+            -1.2056783461731406, 
+            -0.30366275263533477, 
+            -0.084159638859512
+        ]
+    }, 
+    "gridBestScore": 0.7941126498960037, 
+    "modelInputIsSparse": false
+}

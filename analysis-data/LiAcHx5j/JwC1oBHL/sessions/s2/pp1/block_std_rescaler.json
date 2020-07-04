@@ -1,0 +1,50 @@
+{
+    "NUM_DERIVATIVE": {
+        "shifts": {
+            "NUM_DERIVATIVE:log(Loan_Amount_Term)": -1.0999172100755998, 
+            "NUM_DERIVATIVE:TotalIncome^2": 0.9978070175438601, 
+            "NUM_DERIVATIVE:log(ApplicantIncome)": -0.30680472779409473, 
+            "NUM_DERIVATIVE:sqrt(TotalIncome)": 0.21742819631827134, 
+            "NUM_DERIVATIVE:log(LoanAmount)": -0.34177846602979756, 
+            "NUM_DERIVATIVE:MonthlyLoan^2": 0.9978070175438589, 
+            "NUM_DERIVATIVE:LoanAmount^2": 0.9978070175438603, 
+            "NUM_DERIVATIVE:sqrt(ApplicantIncome)": 0.201880464865683, 
+            "NUM_DERIVATIVE:sqrt(Loan_Amount_Term)": 0.4827529897877203, 
+            "NUM_DERIVATIVE:log(CoapplicantIncome)": -0.5704795477658582, 
+            "NUM_DERIVATIVE:log(MonthlyLoan)": -0.35361017540807976, 
+            "NUM_DERIVATIVE:sqrt(MonthlyLoan_Percentage)": 0.19321253143637054, 
+            "NUM_DERIVATIVE:log(TotalIncome)": -0.2652339657386225, 
+            "NUM_DERIVATIVE:log(MonthlyLoan_Percentage)": -0.6995694017817202, 
+            "NUM_DERIVATIVE:ApplicantIncome^2": 0.9978070175438598, 
+            "NUM_DERIVATIVE:sqrt(MonthlyLoan)": 0.19889506715457966, 
+            "NUM_DERIVATIVE:CoapplicantIncome^2": 0.9978070175438569, 
+            "NUM_DERIVATIVE:sqrt(CoapplicantIncome)": 0.259756238286038, 
+            "NUM_DERIVATIVE:Loan_Amount_Term^2": 0.9978070175438458, 
+            "NUM_DERIVATIVE:sqrt(LoanAmount)": 0.2802381092829777, 
+            "NUM_DERIVATIVE:MonthlyLoan_Percentage^2": 0.997807017543859
+        }, 
+        "inv_scales": {
+            "NUM_DERIVATIVE:log(Loan_Amount_Term)": 1.9193184457995422, 
+            "NUM_DERIVATIVE:TotalIncome^2": 0.15694425096592493, 
+            "NUM_DERIVATIVE:log(ApplicantIncome)": 1.031467981250002, 
+            "NUM_DERIVATIVE:sqrt(TotalIncome)": 2.1601278939635824, 
+            "NUM_DERIVATIVE:log(LoanAmount)": 1.016134335255015, 
+            "NUM_DERIVATIVE:MonthlyLoan^2": 0.08199422674828415, 
+            "NUM_DERIVATIVE:LoanAmount^2": 0.2858774003203021, 
+            "NUM_DERIVATIVE:sqrt(ApplicantIncome)": 2.212490104611501, 
+            "NUM_DERIVATIVE:sqrt(Loan_Amount_Term)": 4.311656618143041, 
+            "NUM_DERIVATIVE:log(CoapplicantIncome)": 0.8569632622294587, 
+            "NUM_DERIVATIVE:log(MonthlyLoan)": 0.8925925964269147, 
+            "NUM_DERIVATIVE:sqrt(MonthlyLoan_Percentage)": 2.5996821543503614, 
+            "NUM_DERIVATIVE:log(TotalIncome)": 1.1130915903602898, 
+            "NUM_DERIVATIVE:log(MonthlyLoan_Percentage)": 0.7594879240561245, 
+            "NUM_DERIVATIVE:ApplicantIncome^2": 0.13773846606344375, 
+            "NUM_DERIVATIVE:sqrt(MonthlyLoan)": 2.335075000780167, 
+            "NUM_DERIVATIVE:CoapplicantIncome^2": 0.11407009914598946, 
+            "NUM_DERIVATIVE:sqrt(CoapplicantIncome)": 2.3071237903656856, 
+            "NUM_DERIVATIVE:Loan_Amount_Term^2": 0.3454939659079274, 
+            "NUM_DERIVATIVE:sqrt(LoanAmount)": 2.0444767249256515, 
+            "NUM_DERIVATIVE:MonthlyLoan_Percentage^2": 0.06937824314319353
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "algorithm_name": "FOREST_CLASSIFIER", 
+    "classes": [
+        "Y", 
+        "N"
+    ], 
+    "columns": [
+        "TotalIncome", 
+        "CoapplicantIncome", 
+        "LoanAmount", 
+        "MonthlyLoan", 
+        "MonthlyLoan_MonthTerm_Ratio", 
+        "ApplicantIncome", 
+        "Loan_Amount_Term", 
+        "MonthlyLoan_Percentage"
+    ], 
+    "backend": "PY_MEMORY"
+}

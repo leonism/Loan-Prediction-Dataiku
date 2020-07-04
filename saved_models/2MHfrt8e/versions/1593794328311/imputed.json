@@ -1,0 +1,22 @@
+{
+    "num_values": [
+        6985.156538463558, 
+        1610.4353846174038, 
+        145372.59615384616, 
+        454.6875, 
+        5374.721153846154, 
+        343.41346153846155, 
+        7.4987959535806485
+    ], 
+    "cat_values": [], 
+    "cat_columns": [], 
+    "num_columns": [
+        "TotalIncome", 
+        "CoapplicantIncome", 
+        "LoanAmount", 
+        "MonthlyLoan", 
+        "ApplicantIncome", 
+        "Loan_Amount_Term", 
+        "MonthlyLoan_Percentage"
+    ]
+}

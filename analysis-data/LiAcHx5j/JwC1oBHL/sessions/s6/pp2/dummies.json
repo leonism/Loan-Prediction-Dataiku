@@ -1,0 +1,17 @@
+{
+    "details": {
+        "Property_Area": {
+            "levels": [
+                "Semiurban", 
+                "Urban"
+            ], 
+            "with_others": false
+        }, 
+        "Credit_History": {
+            "levels": [
+                "1"
+            ], 
+            "with_others": false
+        }
+    }
+}

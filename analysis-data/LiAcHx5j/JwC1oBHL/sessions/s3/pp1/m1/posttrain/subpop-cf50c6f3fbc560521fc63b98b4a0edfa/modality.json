@@ -1,0 +1,31 @@
+{
+    "isDate": false, 
+    "weightedNbRecords": 122, 
+    "modalities": [
+        {
+            "count": 41, 
+            "index": 0, 
+            "weightedCount": 41, 
+            "value": "Semiurban", 
+            "filePath": "modality_perf_0.json"
+        }, 
+        {
+            "count": 41, 
+            "index": 1, 
+            "weightedCount": 41, 
+            "value": "Urban", 
+            "filePath": "modality_perf_1.json"
+        }, 
+        {
+            "count": 40, 
+            "index": 2, 
+            "weightedCount": 40, 
+            "value": "Rural", 
+            "filePath": "modality_perf_2.json"
+        }
+    ], 
+    "feature": "Property_Area", 
+    "computed_as_type": "CATEGORY", 
+    "sameNumRowsAsSplit": true, 
+    "nbRecords": 122
+}

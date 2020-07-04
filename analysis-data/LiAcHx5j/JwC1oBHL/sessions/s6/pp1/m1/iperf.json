@@ -1,0 +1,74 @@
+{
+    "usedGridSearch": true, 
+    "probaAware": true, 
+    "gridSize": 2, 
+    "rawImportance": {
+        "variables": [
+            "TotalIncome", 
+            "CoapplicantIncome", 
+            "LoanAmount", 
+            "MonthlyLoan", 
+            "MonthlyLoan_MonthTerm_Ratio", 
+            "ApplicantIncome", 
+            "Loan_Amount_Term", 
+            "MonthlyLoan_Percentage", 
+            "dummy:Property_Area:Semiurban", 
+            "dummy:Property_Area:Urban", 
+            "dummy:Property_Area:Rural", 
+            "dummy:Credit_History:1", 
+            "dummy:Credit_History:__Others__"
+        ], 
+        "importances": [
+            0.09246802285471212, 
+            0.06154363220877703, 
+            0.08626312742619356, 
+            0.08972168327284141, 
+            0.19627792649369005, 
+            0.1108656973789629, 
+            0.020452456459541076, 
+            0.10529353705583061, 
+            0.023074723388062646, 
+            0.010346483945553035, 
+            0.018528649690437337, 
+            0.08845877696204592, 
+            0.09670528286335223
+        ]
+    }, 
+    "modelInputNRows": 416, 
+    "modelInputNCols": 16, 
+    "modelInputMemory": 53248, 
+    "gridCells": [
+        {
+            "scoreTimeStd": 0.049378357832376554, 
+            "scoreTime": 0.9026666666666667, 
+            "fitTime": 2.5273333333333334, 
+            "score": 0.8007957674974964, 
+            "params": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 3, 
+                "max_depth": 13, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.30967222815242723, 
+            "scoreStd": 0.023065001935855697
+        }, 
+        {
+            "scoreTimeStd": 0.2379248247287832, 
+            "scoreTime": 0.5193333333333333, 
+            "fitTime": 1.6106666666666667, 
+            "score": 0.7949488604265992, 
+            "params": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 3, 
+                "max_depth": 6, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.8252120266264233, 
+            "scoreStd": 0.014468535390223088
+        }
+    ], 
+    "gridBestScore": 0.8007957674974964, 
+    "modelInputIsSparse": false
+}

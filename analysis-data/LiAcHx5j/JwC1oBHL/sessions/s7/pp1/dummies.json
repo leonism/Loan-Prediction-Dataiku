@@ -1,0 +1,11 @@
+{
+    "details": {
+        "Credit_History": {
+            "levels": [
+                "1", 
+                "0"
+            ], 
+            "with_others": true
+        }
+    }
+}

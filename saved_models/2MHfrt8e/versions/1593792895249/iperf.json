@@ -1,0 +1,130 @@
+{
+    "usedGridSearch": true, 
+    "probaAware": true, 
+    "gridSize": 2, 
+    "rawImportance": {
+        "variables": [
+            "TotalIncome", 
+            "CoapplicantIncome", 
+            "LoanAmount", 
+            "MonthlyLoan", 
+            "Loan_Amount_Term", 
+            "MonthlyLoan_Percentage", 
+            "dummy:Property_Area:Semiurban", 
+            "dummy:Property_Area:Rural", 
+            "dummy:Gender:Male", 
+            "dummy:Gender:Female", 
+            "dummy:Married:Yes", 
+            "dummy:Married:No", 
+            "dummy:Married:N/A", 
+            "dummy:Self_Employed:Yes", 
+            "dummy:Self_Employed:N/A", 
+            "dummy:Education:Graduate", 
+            "dummy:Education:Not Graduate", 
+            "dummy:Credit_History:1", 
+            "dummy:Credit_History:0", 
+            "dummy:Credit_History:N/A", 
+            "dummy:Dependents:0", 
+            "dummy:Dependents:2", 
+            "dummy:Dependents:1", 
+            "dummy:Dependents:3+", 
+            "dummy:Dependents:N/A"
+        ], 
+        "importances": [
+            0.11016389082422934, 
+            0.07668130322293885, 
+            0.1146392824142667, 
+            0.10717240709947444, 
+            0.0289464560492598, 
+            0.11887176701554678, 
+            0.02535358370397499, 
+            0.02468049534895773, 
+            0.012232589703671963, 
+            0.010633292802220745, 
+            0.013119521269978214, 
+            0.012401509469448584, 
+            0.0002660328062496529, 
+            0.015854492575596783, 
+            0.006550659289447854, 
+            0.010748861407868135, 
+            0.011181097190129241, 
+            0.07156636810966648, 
+            0.1503749905786478, 
+            0.01899152835914212, 
+            0.013224735736701803, 
+            0.016014727432921108, 
+            0.015739395880771383, 
+            0.011309324447265979, 
+            0.003281687261623472
+        ]
+    }, 
+    "modelInputNRows": 456, 
+    "partialDependencies": [
+        {
+            "computedPostTraining": true, 
+            "randomState": 1337, 
+            "onSample": false, 
+            "data": [
+                [
+                    -0.029326819388199143, 
+                    0.07609125243504511, 
+                    0.0352261318933742, 
+                    0.039525608403805035
+                ]
+            ], 
+            "indicesToDrop": [], 
+            "isDate": false, 
+            "feature": "Married", 
+            "categories": [
+                "Yes", 
+                "No", 
+                "__DKU_N/A__", 
+                "__DKU_UNREPRESENTED__"
+            ], 
+            "nbRecords": 122, 
+            "distribution": [
+                0.5819672131147541, 
+                0.4098360655737705, 
+                0.00819672131147541, 
+                0.0
+            ], 
+            "unrepresentedModalities": []
+        }
+    ], 
+    "modelInputNCols": 25, 
+    "modelInputMemory": 91200, 
+    "gridCells": [
+        {
+            "scoreTimeStd": 0.06528059095593082, 
+            "scoreTime": 0.7436666666666666, 
+            "fitTime": 4.085999999999999, 
+            "score": 0.7372431861089082, 
+            "params": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 3, 
+                "max_depth": 13, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.6516394708732737, 
+            "scoreStd": 0.040248581527006985
+        }, 
+        {
+            "scoreTimeStd": 0.23354228739138447, 
+            "scoreTime": 0.498, 
+            "fitTime": 3.14, 
+            "score": 0.7233507896233641, 
+            "params": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 3, 
+                "max_depth": 6, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 1.0961627008189374, 
+            "scoreStd": 0.03624318611347963
+        }
+    ], 
+    "gridBestScore": 0.7372431861089082, 
+    "modelInputIsSparse": false
+}

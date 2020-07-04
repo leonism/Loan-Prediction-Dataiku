@@ -1,0 +1,37 @@
+{
+    "algorithm_name": "LOGISTIC", 
+    "classes": [
+        "Y", 
+        "N"
+    ], 
+    "columns": [
+        "ApplicantIncome", 
+        "CoapplicantIncome", 
+        "Credit_History", 
+        "LoanAmount", 
+        "Loan_Amount_Term", 
+        "MonthlyLoan", 
+        "MonthlyLoan_Percentage", 
+        "TotalIncome", 
+        "dummy:Property_Area:Semiurban", 
+        "dummy:Property_Area:Urban", 
+        "dummy:Property_Area:N/A", 
+        "dummy:Gender:Male", 
+        "dummy:Gender:Female", 
+        "dummy:Gender:N/A", 
+        "dummy:Married:Yes", 
+        "dummy:Married:No", 
+        "dummy:Married:N/A", 
+        "dummy:Self_Employed:No", 
+        "dummy:Self_Employed:Yes", 
+        "dummy:Self_Employed:N/A", 
+        "dummy:Education:Graduate", 
+        "dummy:Education:N/A", 
+        "dummy:Dependents:0", 
+        "dummy:Dependents:1", 
+        "dummy:Dependents:2", 
+        "dummy:Dependents:3+", 
+        "dummy:Dependents:N/A"
+    ], 
+    "backend": "PY_MEMORY"
+}

@@ -1,0 +1,15 @@
+{
+    "selection_params": {
+        "kept_columns": [
+            "MonthlyLoan_MonthTerm_Ratio", 
+            "Loan_Amount_Term", 
+            "MonthlyLoan_Percentage", 
+            "TotalIncome", 
+            "LoanAmount", 
+            "ApplicantIncome", 
+            "CoapplicantIncome", 
+            "MonthlyLoan"
+        ]
+    }, 
+    "method": "DROP"
+}

@@ -1,0 +1,12 @@
+{
+    "columns": [
+        "TotalIncome", 
+        "CoapplicantIncome", 
+        "LoanAmount", 
+        "MonthlyLoan", 
+        "ApplicantIncome", 
+        "Loan_Amount_Term", 
+        "MonthlyLoan_Percentage", 
+        "Credit_History"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+  "description": "",
+  "name": "SGD",
+  "starred": false,
+  "clusterMetas": {},
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.9500000000000001
+}

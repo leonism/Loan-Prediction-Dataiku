@@ -1,0 +1,64 @@
+{
+    "usedGridSearch": true, 
+    "probaAware": true, 
+    "gridSize": 2, 
+    "rawImportance": {
+        "variables": [
+            "TotalIncome", 
+            "CoapplicantIncome", 
+            "LoanAmount", 
+            "MonthlyLoan", 
+            "MonthlyLoan_MonthTerm_Ratio", 
+            "ApplicantIncome", 
+            "Loan_Amount_Term", 
+            "MonthlyLoan_Percentage"
+        ], 
+        "importances": [
+            0.12308336397407567, 
+            0.068759311557484, 
+            0.10339773631409843, 
+            0.09985090281896997, 
+            0.33949716817002906, 
+            0.11934419680542169, 
+            0.027009916008068076, 
+            0.11905740435185308
+        ]
+    }, 
+    "modelInputNRows": 416, 
+    "modelInputNCols": 8, 
+    "modelInputMemory": 26624, 
+    "gridCells": [
+        {
+            "scoreTimeStd": 0.23271346234276083, 
+            "scoreTime": 0.7626666666666667, 
+            "fitTime": 2.251, 
+            "score": 0.7879804081322594, 
+            "params": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 3, 
+                "max_depth": 13, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.21568650089114688, 
+            "scoreStd": 0.015457137967496136
+        }, 
+        {
+            "scoreTimeStd": 0.11456293757872422, 
+            "scoreTime": 0.337, 
+            "fitTime": 1.4393333333333336, 
+            "score": 0.7643888661827769, 
+            "params": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 3, 
+                "max_depth": 6, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.47778958641737784, 
+            "scoreStd": 0.021616037745696173
+        }
+    ], 
+    "gridBestScore": 0.7879804081322594, 
+    "modelInputIsSparse": false
+}

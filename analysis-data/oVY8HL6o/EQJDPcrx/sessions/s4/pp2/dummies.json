@@ -1,0 +1,33 @@
+{
+    "details": {
+        "Property_Area": {
+            "levels": [
+                "Semiurban", 
+                "Urban"
+            ], 
+            "with_others": false
+        }, 
+        "Self_Employed": {
+            "levels": [
+                "No", 
+                "Yes"
+            ], 
+            "with_others": false
+        }, 
+        "Dependents": {
+            "levels": [
+                "0", 
+                "1", 
+                "2", 
+                "3+"
+            ], 
+            "with_others": false
+        }, 
+        "Education": {
+            "levels": [
+                "Graduate"
+            ], 
+            "with_others": false
+        }
+    }
+}

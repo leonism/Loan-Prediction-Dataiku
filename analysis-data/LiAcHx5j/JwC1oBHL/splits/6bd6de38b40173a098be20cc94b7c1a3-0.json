@@ -1,0 +1,61 @@
+{
+  "params": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 0,
+    "subSamplingSeed": 1337
+  },
+  "generationDate": 1593791111940,
+  "policyId": "type\u003dSPLIT_SINGLE_DATASET,split\u003dRANDOM,splitBeforePrepare\u003dtrue,ds\u003dtrain_prepared,sel\u003d(method\u003dhead-s,records\u003d100000),r\u003d0.8,s\u003d1337",
+  "instanceId": "6bd6de38b40173a098be20cc94b7c1a3-0",
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"Gender","type":"string"},
+      {"name":"Married","type":"boolean"},
+      {"name":"Dependents","type":"string","downcastedToStringFromMeaning":"LongMeaning"},
+      {"name":"Education","type":"string"},
+      {"name":"Self_Employed","type":"boolean"},
+      {"name":"ApplicantIncome","type":"bigint"},
+      {"name":"CoapplicantIncome","type":"double"},
+      {"name":"TotalIncome","type":"double"},
+      {"name":"LoanAmount","type":"bigint"},
+      {"name":"MonthlyLoan","type":"bigint"},
+      {"name":"MonthlyLoan_Percentage","type":"double"},
+      {"name":"Loan_Amount_Term","type":"bigint"},
+      {"name":"Credit_History","type":"boolean"},
+      {"name":"Property_Area","type":"string"},
+      {"name":"Loan_Status","type":"boolean"}
+    ],
+    "userModified": false
+  },
+  "trainPath": "train-6bd6de38b40173a098be20cc94b7c1a3-0.csv.gz",
+  "testPath": "test-6bd6de38b40173a098be20cc94b7c1a3-0.csv.gz",
+  "trainRows": 456,
+  "testRows": 122,
+  "fullRows": 0
+}

@@ -1,0 +1,56 @@
+{
+    "details": {
+        "Property_Area": {
+            "levels": [
+                "Semiurban", 
+                "Urban", 
+                "Rural"
+            ], 
+            "with_others": true
+        }, 
+        "Gender": {
+            "levels": [
+                "Male", 
+                "Female"
+            ], 
+            "with_others": true
+        }, 
+        "Married": {
+            "levels": [
+                "Yes", 
+                "No"
+            ], 
+            "with_others": true
+        }, 
+        "Self_Employed": {
+            "levels": [
+                "No", 
+                "Yes"
+            ], 
+            "with_others": true
+        }, 
+        "Dependents": {
+            "levels": [
+                "0", 
+                "2", 
+                "1", 
+                "3+"
+            ], 
+            "with_others": true
+        }, 
+        "Education": {
+            "levels": [
+                "Graduate", 
+                "Not Graduate"
+            ], 
+            "with_others": true
+        }, 
+        "Credit_History": {
+            "levels": [
+                "1", 
+                "0"
+            ], 
+            "with_others": true
+        }
+    }
+}

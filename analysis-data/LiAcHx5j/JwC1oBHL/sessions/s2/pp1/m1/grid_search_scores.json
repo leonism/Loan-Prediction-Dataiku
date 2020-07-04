@@ -1,0 +1,35 @@
+{
+    "gridSize": 2, 
+    "nThreads": 4, 
+    "metric": "ROC_AUC", 
+    "gridPoints": [
+        {
+            "index": 0, 
+            "finishedAt": 1593791215960.0, 
+            "score": 0.7257825968699989, 
+            "parameters": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 3, 
+                "max_depth": 6, 
+                "min_samples_leaf": 1
+            }, 
+            "time": 6581.0
+        }, 
+        {
+            "index": 1, 
+            "finishedAt": 1593791214462.0, 
+            "score": 0.7314488309160663, 
+            "parameters": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 3, 
+                "max_depth": 13, 
+                "min_samples_leaf": 1
+            }, 
+            "time": 10009.0
+        }
+    ], 
+    "startedAt": 1593791210922, 
+    "nSplits": 3
+}

@@ -1,0 +1,23 @@
+{
+    "algorithm_name": "LOGISTIC", 
+    "classes": [
+        "Y", 
+        "N"
+    ], 
+    "columns": [
+        "TotalIncome", 
+        "CoapplicantIncome", 
+        "LoanAmount", 
+        "MonthlyLoan", 
+        "MonthlyLoan_MonthTerm_Ratio", 
+        "ApplicantIncome", 
+        "Loan_Amount_Term", 
+        "MonthlyLoan_Percentage", 
+        "dummy:Property_Area:Semiurban", 
+        "dummy:Property_Area:Urban", 
+        "dummy:Property_Area:N/A", 
+        "dummy:Credit_History:1", 
+        "dummy:Credit_History:N/A"
+    ], 
+    "backend": "PY_MEMORY"
+}

@@ -1,0 +1,92 @@
+{
+    "usedGridSearch": true, 
+    "probaAware": true, 
+    "gridSize": 2, 
+    "rawImportance": {
+        "variables": [
+            "TotalIncome", 
+            "CoapplicantIncome", 
+            "LoanAmount", 
+            "MonthlyLoan", 
+            "ApplicantIncome", 
+            "Loan_Amount_Term", 
+            "MonthlyLoan_Percentage", 
+            "dummy:Property_Area:Semiurban", 
+            "dummy:Property_Area:Urban", 
+            "dummy:Property_Area:Rural", 
+            "dummy:Gender:Male", 
+            "dummy:Gender:Female", 
+            "dummy:Gender:N/A", 
+            "dummy:Married:Yes", 
+            "dummy:Married:No", 
+            "dummy:Married:N/A", 
+            "dummy:Self_Employed:N/A", 
+            "dummy:Education:Graduate", 
+            "dummy:Education:Not Graduate", 
+            "dummy:Credit_History:1", 
+            "dummy:Credit_History:0", 
+            "dummy:Dependents:N/A"
+        ], 
+        "importances": [
+            0.10495883415062768, 
+            0.06835312184698933, 
+            0.1051019295854461, 
+            0.10307947568394865, 
+            0.09179645273521266, 
+            0.020113394767666857, 
+            0.10818551764397609, 
+            0.02248974500704486, 
+            0.010873441366643248, 
+            0.019328876172856613, 
+            0.011009254244806824, 
+            0.011946825677367299, 
+            0.0020830190379731535, 
+            0.01414167247736419, 
+            0.01661406895228705, 
+            0.0002837626481403609, 
+            0.004125455901510187, 
+            0.010807604287721175, 
+            0.008906219962652092, 
+            0.14311503480322516, 
+            0.11880680929013575, 
+            0.003879483756404684
+        ]
+    }, 
+    "modelInputNRows": 416, 
+    "modelInputNCols": 25, 
+    "modelInputMemory": 83200, 
+    "gridCells": [
+        {
+            "scoreTimeStd": 0.03550586805961329, 
+            "scoreTime": 0.48600000000000004, 
+            "fitTime": 2.268666666666667, 
+            "score": 0.7896083605806677, 
+            "params": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 3, 
+                "max_depth": 13, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.08178562764256854, 
+            "scoreStd": 0.02503932840906338
+        }, 
+        {
+            "scoreTimeStd": 0.14667196960110226, 
+            "scoreTime": 0.34500000000000003, 
+            "fitTime": 1.168, 
+            "score": 0.7731248154385393, 
+            "params": {
+                "max_features": "auto", 
+                "n_estimators": 100, 
+                "min_samples_split": 3, 
+                "max_depth": 6, 
+                "min_samples_leaf": 1
+            }, 
+            "fitTimeStd": 0.6813633391957628, 
+            "scoreStd": 0.017421985551879418
+        }
+    ], 
+    "gridBestScore": 0.7896083605806677, 
+    "modelInputIsSparse": false
+}

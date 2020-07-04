@@ -1,0 +1,273 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Loan_ID"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "mainColor": "#90d931",
+      "name": "Income",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnCopier",
+          "params": {
+            "outputColumn": "TotalIncome",
+            "inputColumn": "CoapplicantIncome"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CreateColumnWithGREL",
+          "params": {
+            "expression": "ApplicantIncome + CoapplicantIncome",
+            "column": "TotalIncome"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#deeccb"
+    },
+    {
+      "preview": false,
+      "mainColor": "#30c2ff",
+      "name": "Empty Cell",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "RemoveRowsOnEmpty",
+          "params": {
+            "columns": [
+              "LoanAmount"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "RemoveRowsOnEmpty",
+          "params": {
+            "columns": [
+              "Loan_Amount_Term"
+            ],
+            "keep": false,
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#cae8f4"
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "LoanAmount * 1000",
+        "column": "LoanAmount"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnCopier",
+      "params": {
+        "outputColumn": "MonthlyLoan",
+        "inputColumn": "LoanAmount"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "LoanAmount / Loan_Amount_Term",
+        "column": "MonthlyLoan"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RoundProcessor",
+      "params": {
+        "mode": "ROUND",
+        "places": 0,
+        "columns": [
+          "MonthlyLoan"
+        ],
+        "precision": 0,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnCopier",
+      "params": {
+        "outputColumn": "MonthlyLoan_Percentage",
+        "inputColumn": "MonthlyLoan"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(MonthlyLoan / TotalIncome) * 100",
+        "column": "MonthlyLoan_Percentage"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnCopier",
+      "params": {
+        "outputColumn": "MonthlyLoan_MonthTerm_Ratio",
+        "inputColumn": "Loan_Amount_Term"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(MonthlyLoan_Percentage / Loan_Amount_Term) + (Credit_History * 100)",
+        "column": "MonthlyLoan_MonthTerm_Ratio"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RemoveRowsOnEmpty",
+      "params": {
+        "columns": [
+          "Credit_History"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "Loan_Amount_Term_copy": 173,
+    "MonthlyLoan_MonthTerm_Ratio": 218,
+    "DoubleIncome": 105,
+    "LoanAmountMonthly_copy": 180,
+    "Gender": 100,
+    "TotalIncome": 100,
+    "MonthlyLoan_Percentage": 180,
+    "MonthlyLoan": 132,
+    "LoanAmount": 132,
+    "Married": 100,
+    "Education": 113,
+    "CoapplicantIncome": 143,
+    "Loan_Amount_Term": 145,
+    "Loan_ID": 100,
+    "ApplicantIncome": 128,
+    "CoapplicantIncome_copy": 180,
+    "Loan_Status": 100,
+    "MonthlyLoan_copy": 135,
+    "LoanAmount_copy": 128,
+    "Self_Employed": 113,
+    "Property_Area": 113,
+    "Dependents": 100,
+    "Credit_History": 163,
+    "LoanAmountMonthly": 169,
+    "LoanAmountMonthly_Percentage": 225
+  },
+  "sorting": [
+    {
+      "column": "MonthlyLoan_MonthTerm_Ratio",
+      "ascending": false
+    }
+  ],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

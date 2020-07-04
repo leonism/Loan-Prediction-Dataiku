@@ -1,0 +1,59 @@
+{
+    "gridSize": 5, 
+    "nThreads": 4, 
+    "metric": "ROC_AUC", 
+    "gridPoints": [
+        {
+            "index": 0, 
+            "finishedAt": 1593792063437.0, 
+            "score": 0.6603906886597497, 
+            "parameters": {
+                "penalty": "l2", 
+                "C": 0.01
+            }, 
+            "time": 130.0
+        }, 
+        {
+            "index": 1, 
+            "finishedAt": 1593792063718.0, 
+            "score": 0.7547061805864823, 
+            "parameters": {
+                "penalty": "l2", 
+                "C": 0.1
+            }, 
+            "time": 459.0
+        }, 
+        {
+            "index": 2, 
+            "finishedAt": 1593792063847.0, 
+            "score": 0.7603310384130806, 
+            "parameters": {
+                "penalty": "l2", 
+                "C": 1.0
+            }, 
+            "time": 258.0
+        }, 
+        {
+            "index": 3, 
+            "finishedAt": 1593792063361.0, 
+            "score": 0.7584566430026459, 
+            "parameters": {
+                "penalty": "l2", 
+                "C": 10.0
+            }, 
+            "time": 160.0
+        }, 
+        {
+            "index": 4, 
+            "finishedAt": 1593792063481.0, 
+            "score": 0.7601564454405567, 
+            "parameters": {
+                "penalty": "l2", 
+                "C": 100.0
+            }, 
+            "time": 146.0
+        }
+    ], 
+    "startedAt": 1593792063279, 
+    "nSplits": 3
+}

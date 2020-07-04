@@ -1,0 +1,138 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "Gender": 100,
+      "Married": 100,
+      "Dependents": 100,
+      "Education": 113,
+      "Self_Employed": 113,
+      "ApplicantIncome": 128,
+      "CoapplicantIncome": 143,
+      "TotalIncome": 100,
+      "LoanAmount": 100,
+      "MonthlyLoan": 100,
+      "MonthlyLoan_Percentage": 204,
+      "Loan_Amount_Term": 135,
+      "MonthlyLoan_MonthTerm_Ratio": 239,
+      "Credit_History": 120,
+      "Property_Area": 113,
+      "Loan_Status": 100
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [
+      {
+        "column": "Credit_History",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "Credit_History",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "0": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "Credit_History",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "Credit_History",
+          "params": {
+            "type": "Boolean",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      },
+      {
+        "column": "Loan_Status",
+        "type": "columnFilter",
+        "currentMode": "FACET",
+        "active": true,
+        "facet": {
+          "type": "facet",
+          "column": "Loan_Status",
+          "columnType": "ALPHANUM",
+          "currentMode": "ALPHANUM",
+          "sort": "count",
+          "selectedValues": {
+            "Y": true
+          }
+        },
+        "alphanumFilter": {
+          "type": "alphanum",
+          "column": "Loan_Status",
+          "values": [],
+          "params": {
+            "mode": "full_string",
+            "normalization": "exact"
+          }
+        },
+        "validityFilter": {
+          "type": "validity",
+          "column": "Loan_Status",
+          "params": {
+            "type": "Boolean",
+            "ok": true,
+            "nok": true,
+            "empty": true
+          }
+        }
+      }
+    ],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": []
+}

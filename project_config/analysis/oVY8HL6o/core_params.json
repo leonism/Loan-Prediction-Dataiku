@@ -1,0 +1,243 @@
+{
+  "inputDatasetSmartName": "train",
+  "script": {
+    "steps": [
+      {
+        "type": "ColumnsSelector",
+        "params": {
+          "keep": false,
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "Loan_ID"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "steps": [
+          {
+            "type": "ColumnCopier",
+            "params": {
+              "inputColumn": "CoapplicantIncome",
+              "outputColumn": "TotalIncome"
+            },
+            "metaType": "PROCESSOR",
+            "preview": false,
+            "disabled": false,
+            "alwaysShowComment": false
+          },
+          {
+            "type": "CreateColumnWithGREL",
+            "params": {
+              "column": "TotalIncome",
+              "expression": "ApplicantIncome + CoapplicantIncome"
+            },
+            "metaType": "PROCESSOR",
+            "preview": false,
+            "disabled": false,
+            "alwaysShowComment": false
+          }
+        ],
+        "metaType": "GROUP",
+        "preview": false,
+        "disabled": false,
+        "name": "Income",
+        "alwaysShowComment": false,
+        "mainColor": "#90d931",
+        "secondaryColor": "#deeccb"
+      },
+      {
+        "steps": [
+          {
+            "type": "RemoveRowsOnEmpty",
+            "params": {
+              "keep": false,
+              "appliesTo": "SINGLE_COLUMN",
+              "columns": [
+                "LoanAmount"
+              ]
+            },
+            "metaType": "PROCESSOR",
+            "preview": false,
+            "disabled": false,
+            "alwaysShowComment": false
+          },
+          {
+            "type": "RemoveRowsOnEmpty",
+            "params": {
+              "keep": false,
+              "appliesTo": "SINGLE_COLUMN",
+              "columns": [
+                "Loan_Amount_Term"
+              ]
+            },
+            "metaType": "PROCESSOR",
+            "preview": false,
+            "disabled": false,
+            "alwaysShowComment": false
+          }
+        ],
+        "metaType": "GROUP",
+        "preview": false,
+        "disabled": false,
+        "name": "Empty Cell",
+        "alwaysShowComment": false,
+        "mainColor": "#30c2ff",
+        "secondaryColor": "#cae8f4"
+      },
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "LoanAmount",
+          "expression": "LoanAmount * 1000"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "ColumnCopier",
+        "params": {
+          "inputColumn": "LoanAmount",
+          "outputColumn": "MonthlyLoan"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "MonthlyLoan",
+          "expression": "LoanAmount / Loan_Amount_Term"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "RoundProcessor",
+        "params": {
+          "mode": "ROUND",
+          "places": 0,
+          "precision": 0,
+          "appliesTo": "SINGLE_COLUMN",
+          "columns": [
+            "MonthlyLoan"
+          ]
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "ColumnCopier",
+        "params": {
+          "inputColumn": "MonthlyLoan",
+          "outputColumn": "MonthlyLoan_Percentage"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      },
+      {
+        "type": "CreateColumnWithGREL",
+        "params": {
+          "column": "MonthlyLoan_Percentage",
+          "expression": "(MonthlyLoan / TotalIncome) * 100"
+        },
+        "metaType": "PROCESSOR",
+        "preview": false,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "Loan_ID": 100,
+      "Gender": 100,
+      "Married": 100,
+      "Dependents": 100,
+      "Education": 113,
+      "Self_Employed": 113,
+      "ApplicantIncome": 128,
+      "CoapplicantIncome": 143,
+      "LoanAmount": 100,
+      "Loan_Amount_Term": 135,
+      "Credit_History": 120,
+      "Property_Area": 113,
+      "Loan_Status": 100
+    },
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxStoredBytes": 104857600,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "name": "Analyze train",
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1593791832758
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1593791825898
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

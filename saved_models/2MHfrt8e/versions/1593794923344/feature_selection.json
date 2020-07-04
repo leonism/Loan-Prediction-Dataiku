@@ -1,0 +1,32 @@
+{
+    "selection_params": {
+        "kept_columns": [
+            "dummy:Credit_History:0", 
+            "dummy:Credit_History:1", 
+            "dummy:Property_Area:Rural", 
+            "dummy:Property_Area:Semiurban", 
+            "dummy:Dependents:2", 
+            "dummy:Dependents:N/A", 
+            "CoapplicantIncome", 
+            "dummy:Married:No", 
+            "Loan_Amount_Term", 
+            "dummy:Married:Yes", 
+            "dummy:Credit_History:N/A", 
+            "dummy:Education:Not Graduate", 
+            "dummy:Education:Graduate", 
+            "dummy:Dependents:3+", 
+            "LoanAmount", 
+            "dummy:Married:N/A", 
+            "TotalIncome", 
+            "dummy:Self_Employed:N/A", 
+            "dummy:Dependents:1", 
+            "MonthlyLoan", 
+            "dummy:Self_Employed:Yes", 
+            "dummy:Gender:Female", 
+            "MonthlyLoan_Percentage", 
+            "dummy:Gender:Male", 
+            "dummy:Dependents:0"
+        ]
+    }, 
+    "method": "DROP"
+}

@@ -1,0 +1,15 @@
+{
+    "resolved": {
+        "skipExpensiveReports": false, 
+        "algorithm": "SGD_CLASSIFICATION", 
+        "sgd": {
+            "loss": "log", 
+            "n_jobs": 2, 
+            "n_iter": 29, 
+            "l1_ratio": 0.15, 
+            "penalty": "l1", 
+            "alpha": 0.0001
+        }
+    }, 
+    "other": {}
+}

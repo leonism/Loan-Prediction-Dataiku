@@ -1,0 +1,201 @@
+{
+    "per_feature": {
+        "TotalIncome": {
+            "stats": {
+                "std": 7180.217827949436, 
+                "p99": 40936.799999999974, 
+                "min": 1880.0, 
+                "max": 81000.0, 
+                "average": 7314.749824536491, 
+                "median": 5487.5
+            }, 
+            "missing_impute_with_value": 7314.749824536491
+        }, 
+        "Property_Area": {
+            "stats": {
+                "mostFrequentValue": "Semiurban", 
+                "leastFrequentValue": "Rural"
+            }, 
+            "category_possible_counts": [
+                184, 
+                143
+            ], 
+            "category_possible_values": [
+                "Semiurban", 
+                "Urban"
+            ]
+        }, 
+        "CoapplicantIncome": {
+            "stats": {
+                "std": 3231.357559138051, 
+                "p99": 10023.999999999975, 
+                "min": 0.0, 
+                "max": 41667.0, 
+                "average": 1713.1094736592981, 
+                "median": 1221.0
+            }, 
+            "missing_impute_with_value": 1713.1094736592981
+        }, 
+        "LoanAmount": {
+            "stats": {
+                "std": 89730.77097025594, 
+                "p99": 531499.9999999992, 
+                "min": 17000.0, 
+                "max": 700000.0, 
+                "average": 149122.80701754385, 
+                "median": 128000.0
+            }, 
+            "missing_impute_with_value": 149122.80701754385
+        }, 
+        "Gender": {
+            "stats": {
+                "mostFrequentValue": "Male", 
+                "leastFrequentValue": "Female"
+            }, 
+            "category_possible_counts": [
+                363, 
+                83
+            ], 
+            "category_possible_values": [
+                "Male", 
+                "Female"
+            ]
+        }, 
+        "MonthlyLoan": {
+            "stats": {
+                "std": 545.936324992757, 
+                "p99": 2195.4999999999973, 
+                "min": 83.0, 
+                "max": 9250.0, 
+                "average": 485.93859649122805, 
+                "median": 367.0
+            }, 
+            "missing_impute_with_value": 485.93859649122805
+        }, 
+        "Married": {
+            "stats": {
+                "mostFrequentValue": "Yes", 
+                "leastFrequentValue": "No"
+            }, 
+            "category_possible_counts": [
+                304, 
+                151
+            ], 
+            "category_possible_values": [
+                "Yes", 
+                "No"
+            ]
+        }, 
+        "ApplicantIncome": {
+            "stats": {
+                "std": 6820.105993990807, 
+                "p99": 38361.599999999984, 
+                "min": 150.0, 
+                "max": 81000.0, 
+                "average": 5601.640350877193, 
+                "median": 3806.5
+            }, 
+            "missing_impute_with_value": 5601.640350877193
+        }, 
+        "Loan_Amount_Term": {
+            "stats": {
+                "std": 64.90123831275224, 
+                "p99": 480.0, 
+                "min": 12.0, 
+                "max": 480.0, 
+                "average": 342.4736842105263, 
+                "median": 360.0
+            }, 
+            "missing_impute_with_value": 342.4736842105263
+        }, 
+        "Self_Employed": {
+            "stats": {
+                "mostFrequentValue": "No", 
+                "leastFrequentValue": "Yes"
+            }, 
+            "category_possible_counts": [
+                365, 
+                67
+            ], 
+            "category_possible_values": [
+                "No", 
+                "Yes"
+            ]
+        }, 
+        "Loan_Status": {
+            "stats": {}
+        }, 
+        "MonthlyLoan_Percentage": {
+            "stats": {
+                "std": 6.62824698225674, 
+                "p99": 29.405554558775155, 
+                "min": 0.7008101365178145, 
+                "max": 123.63004544239509, 
+                "average": 7.5719989005301835, 
+                "median": 6.93689488723056
+            }, 
+            "missing_impute_with_value": 7.5719989005301835
+        }, 
+        "Education": {
+            "stats": {
+                "mostFrequentValue": "Graduate", 
+                "leastFrequentValue": "Not Graduate"
+            }, 
+            "category_possible_counts": [
+                363
+            ], 
+            "category_possible_values": [
+                "Graduate"
+            ]
+        }, 
+        "Credit_History": {
+            "stats": {
+                "mostFrequentValue": "1", 
+                "leastFrequentValue": "0"
+            }, 
+            "category_possible_counts": [
+                356, 
+                61
+            ], 
+            "category_possible_values": [
+                "1", 
+                "0"
+            ]
+        }, 
+        "Dependents": {
+            "stats": {
+                "mostFrequentValue": "0", 
+                "leastFrequentValue": "3+"
+            }, 
+            "category_possible_counts": [
+                253, 
+                80, 
+                75, 
+                38
+            ], 
+            "category_possible_values": [
+                "0", 
+                "2", 
+                "1", 
+                "3+"
+            ]
+        }
+    }, 
+    "feature_order": [
+        "TotalIncome", 
+        "Property_Area", 
+        "CoapplicantIncome", 
+        "LoanAmount", 
+        "Gender", 
+        "MonthlyLoan", 
+        "Married", 
+        "ApplicantIncome", 
+        "Loan_Amount_Term", 
+        "Self_Employed", 
+        "Loan_Status", 
+        "MonthlyLoan_Percentage", 
+        "Education", 
+        "Credit_History", 
+        "Dependents"
+    ]
+}

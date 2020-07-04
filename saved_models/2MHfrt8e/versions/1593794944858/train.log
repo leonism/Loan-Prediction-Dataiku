@@ -1,0 +1,599 @@
+[2020/07/03-23:49:04.468] [ActivityExecutor-31] [INFO] [dku] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - ----------------------------------------
+[2020/07/03-23:49:04.468] [ActivityExecutor-31] [INFO] [dku] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - DSS startup: jek version:7.0.1
+[2020/07/03-23:49:04.468] [ActivityExecutor-31] [INFO] [dku] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - DSS home: /Volumes/DATA/dss_home
+[2020/07/03-23:49:04.468] [ActivityExecutor-31] [INFO] [dku] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - OS: Mac OS X 10.14.6 x86_64 - Java: AdoptOpenJDK 1.8.0_252
+[2020/07/03-23:49:04.467] [ActivityExecutor-31] [INFO] [dku.flow.jobrunner] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Allocated a slot for this activity!
+[2020/07/03-23:49:04.470] [ActivityExecutor-31] [INFO] [dku.flow.jobrunner] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Run activity
+[2020/07/03-23:49:04.503] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Executing default pre-activity lifecycle hook
+[2020/07/03-23:49:04.647] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Checking if sources are ready
+[2020/07/03-23:49:04.660] [ActivityExecutor-31] [DEBUG] [dku.dataset.hash] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Readiness cache miss for dataset__admin__LOADPREDICTION.train_prepared__NP
+[2020/07/03-23:49:04.679] [ActivityExecutor-31] [INFO] [dku.datasets.file] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"LOADPREDICTION/train_prepared","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/07/03-23:49:04.683] [ActivityExecutor-31] [INFO] [dku.datasets.ftplike] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Enumerating Filesystem dataset prefix=
+[2020/07/03-23:49:04.716] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Enumerating local filesystem prefix=/
+[2020/07/03-23:49:04.719] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Enumeration done nb_paths=1 size=17614
+[2020/07/03-23:49:04.723] [ActivityExecutor-31] [INFO] [dku.dataset.hash] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Caching readiness for dataset__admin__LOADPREDICTION.train_prepared__NP s=READY h=tSGwfPrLi5i8i2FXC/5VEw
+[2020/07/03-23:49:04.724] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Checked source readiness LOADPREDICTION.train_prepared -> true
+[2020/07/03-23:49:04.728] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Computing hashes to propagate BEFORE activity
+[2020/07/03-23:49:04.735] [ActivityExecutor-31] [DEBUG] [dku.dataset.hash] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Readiness cache miss for dataset__admin__LOADPREDICTION.train_prepared__NP
+[2020/07/03-23:49:04.737] [ActivityExecutor-31] [INFO] [dku.datasets.file] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"LOADPREDICTION/train_prepared","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/07/03-23:49:04.738] [ActivityExecutor-31] [INFO] [dku.datasets.ftplike] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Enumerating Filesystem dataset prefix=
+[2020/07/03-23:49:04.742] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Enumerating local filesystem prefix=/
+[2020/07/03-23:49:04.744] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Enumeration done nb_paths=1 size=17614
+[2020/07/03-23:49:04.745] [ActivityExecutor-31] [INFO] [dku.dataset.hash] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Caching readiness for dataset__admin__LOADPREDICTION.train_prepared__NP s=READY h=tSGwfPrLi5i8i2FXC/5VEw
+[2020/07/03-23:49:04.748] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Recorded 1 hashes before activity run
+[2020/07/03-23:49:04.749] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Building recipe runner of type
+[2020/07/03-23:49:04.850] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Recipe runner built, will use 1 thread(s)
+[2020/07/03-23:49:04.851] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Starting execution thread: com.dataiku.dip.analysis.ml.prediction.flow.PredictionTrainingRecipeRunner@4660beaa
+[2020/07/03-23:49:04.854] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Execution threads started, waiting for activity end
+[2020/07/03-23:49:04.856] [FRT-35-FlowRunnable] [INFO] [dku.flow.activity] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Run thread for activity train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP starting
+[2020/07/03-23:49:04.917] [FRT-35-FlowRunnable] [INFO] [dku.datasets.file] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"LOADPREDICTION/train_prepared","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/07/03-23:49:04.924] [FRT-35-FlowRunnable] [INFO] [dku.datasets.ftplike] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Enumerating Filesystem dataset prefix=
+[2020/07/03-23:49:04.928] [FRT-35-FlowRunnable] [DEBUG] [dku.fs.local] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Enumerating local filesystem prefix=/
+[2020/07/03-23:49:04.929] [FRT-35-FlowRunnable] [DEBUG] [dku.fs.local] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Enumeration done nb_paths=1 size=17614
+[2020/07/03-23:49:04.932] [FRT-35-FlowRunnable] [INFO] [dku.input.push] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - USTP: push selection.method=FULL records=100000 ratio=0.02 col=null
+[2020/07/03-23:49:04.940] [FRT-35-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Extractor run: limit={"maxBytes":-1,"maxRecords":-1,"ordering":{"enabled":false,"rules":[]}} totalRecords=0
+[2020/07/03-23:49:04.952] [FRT-35-FlowRunnable] [INFO] [dku] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - getCompression filename=**out-s0.csv.gz**
+[2020/07/03-23:49:04.954] [FRT-35-FlowRunnable] [INFO] [dku] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - getCompression filename=**out-s0.csv.gz**
+[2020/07/03-23:49:04.955] [FRT-35-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Start compressed [GZIP] stream: /Volumes/DATA/dss_home/managed_datasets/LOADPREDICTION/train_prepared/out-s0.csv.gz / totalRecsBefore=0
+[2020/07/03-23:49:04.956] [FRT-35-FlowRunnable] [INFO] [dku] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - getCompression filename=**out-s0.csv.gz**
+[2020/07/03-23:49:04.960] [FRT-35-FlowRunnable] [INFO] [dku] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - getCompression filename=**out-s0.csv.gz**
+[2020/07/03-23:49:05.118] [FRT-35-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - after stream totalComp=17614 totalUncomp=55535 totalRec=529
+[2020/07/03-23:49:05.119] [FRT-35-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Extractor run done, totalCompressed=17614 totalRecords=529
+[2020/07/03-23:49:05.145] [FRT-35-FlowRunnable] [INFO] [dku.recipes.prediction.train] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Read modeling: 
+ {
+  "algorithm": "RANDOM_FOREST_CLASSIFICATION",
+  "rf_classifier_grid": {
+    "enabled": true,
+    "n_estimators": {
+      "values": [
+        100
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "n_jobs": 4,
+    "max_tree_depth": {
+      "values": [
+        6,
+        13
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "min_samples_leaf": {
+      "values": [
+        1
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "selection_mode": "auto",
+    "max_features": {
+      "values": [
+        5
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "max_feature_prop": 0.3
+  },
+  "max_ensemble_nodes_serialized": 6000,
+  "metrics": {
+    "evaluationMetric": "ROC_AUC",
+    "customEvaluationMetricGIB": true,
+    "customEvaluationMetricNeedsProba": false,
+    "thresholdOptimizationMetric": "F1",
+    "costMatrixWeights": {
+      "tpGain": 1.0,
+      "tnGain": 0.0,
+      "fpGain": -0.3,
+      "fnGain": 0.0
+    },
+    "liftPoint": 0.4
+  },
+  "autoOptimizeThreshold": true,
+  "forcedClassifierThreshold": 0.0,
+  "gridLength": 2,
+  "grid_search_params": {
+    "mode": "KFOLD",
+    "splitRatio": 0.8,
+    "shuffleIterations": 1,
+    "nFolds": 3,
+    "stratified": true,
+    "strategy": "GRID",
+    "randomized": true,
+    "nIter": 0,
+    "timeout": 0,
+    "nJobs": 4
+  },
+  "pluginAlgoCustomGridSearch": false,
+  "computeLearningCurves": false,
+  "skipExpensiveReports": false
+}
+[2020/07/03-23:49:05.183] [FRT-35-FlowRunnable] [INFO] [dku.recipes.prediction.train] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Run training in code env built-in (set at deploy-time)
+[2020/07/03-23:49:05.194] [FRT-35-FlowRunnable] [INFO] [dku.datasets.file] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"LOADPREDICTION/train_prepared","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/07/03-23:49:05.197] [FRT-35-FlowRunnable] [INFO] [dku.datasets.file] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"LOADPREDICTION/train_prepared","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/07/03-23:49:05.210] [FRT-35-FlowRunnable] [WARN] [dku.code.projectLibs] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - External libraries file not found: /Volumes/DATA/dss_home/jobs/LOADPREDICTION/Build_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_2020-07-03T16-48-54.943/localconfig/projects/LOADPREDICTION/lib/external-libraries.json
+[2020/07/03-23:49:05.214] [FRT-35-FlowRunnable] [INFO] [dku.code.projectLibs] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - EXTERNAL LIBS FROM LOADPREDICTION is {"gitReferences":{},"pythonPath":["python"],"rsrcPath":["R"],"importLibrariesFromProjects":[]}
+[2020/07/03-23:49:05.216] [FRT-35-FlowRunnable] [INFO] [dku.code.projectLibs] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - chunkFolder is /Volumes/DATA/dss_home/jobs/LOADPREDICTION/Build_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_2020-07-03T16-48-54.943/localconfig/projects/LOADPREDICTION/lib/R
+[2020/07/03-23:49:05.220] [FRT-35-FlowRunnable] [INFO] [xxx] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - RSRC PATH: ["/Volumes/DATA/dss_home/jobs/LOADPREDICTION/Build_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_2020-07-03T16-48-54.943/localconfig/projects/LOADPREDICTION/lib/R"]
+[2020/07/03-23:49:05.223] [FRT-35-FlowRunnable] [INFO] [dku.recipes.code.base] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Writing dku-exec-env for local execution in /Volumes/DATA/dss_home/jobs/LOADPREDICTION/Build_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_2020-07-03T16-48-54.943/train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP/prediction-train-recipe/pyrunrGCqRUAjN0ST/remote-run-env-def.json
+[2020/07/03-23:49:05.233] [FRT-35-FlowRunnable] [INFO] [dku.code.envs.resolution] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Executing Python activity in builtin env
+[2020/07/03-23:49:05.234] [FRT-35-FlowRunnable] [INFO] [dku.flow.abstract.python] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Execute activity command: ["/Volumes/DATA/dss_home/bin/python","-u","-m","dataiku.doctor.prediction.reg_train_recipe","/Volumes/DATA/dss_home/saved_models/LOADPREDICTION/2MHfrt8e/versions/1593794944858","/Volumes/DATA/dss_home/saved_models/LOADPREDICTION/2MHfrt8e/core/selection","TRAIN_SPLITTED_ONLY"]
+[2020/07/03-23:49:05.235] [FRT-35-FlowRunnable] [INFO] [dku.recipes.code.base] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Run command insecurely, from user gerryleonugroho
+[2020/07/03-23:49:05.238] [FRT-35-FlowRunnable] [INFO] [dku.security.process] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Starting process (regular)
+[2020/07/03-23:49:05.247] [FRT-35-FlowRunnable] [INFO] [dku.security.process] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Process started with pid=12030
+[2020/07/03-23:49:05.260] [FRT-35-FlowRunnable] [INFO] [dku.processes.cgroups] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Will use cgroups []
+[2020/07/03-23:49:05.261] [FRT-35-FlowRunnable] [INFO] [dku.processes.cgroups] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Applying rules to used cgroups: []
+[2020/07/03-23:49:05.281] [FRT-35-FlowRunnable] [INFO] [dku.recipes.code.base] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Process reads from nothing
+[2020/07/03-23:49:14.072] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,071 INFO START -  Loading train set
+[2020/07/03-23:49:14.076] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,072 INFO Reading with dtypes: None
+[2020/07/03-23:49:14.078] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,072 INFO Computed dtype for Gender: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.080] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,072 INFO Computed dtype for Married: str (schema_type=boolean feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.081] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,072 INFO Computed dtype for Dependents: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.083] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,072 INFO Computed dtype for Education: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.086] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,072 INFO Computed dtype for Self_Employed: str (schema_type=boolean feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.089] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,072 INFO Computed dtype for ApplicantIncome: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.090] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,073 INFO Computed dtype for CoapplicantIncome: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.093] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,073 INFO Computed dtype for TotalIncome: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.094] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,073 INFO Computed dtype for LoanAmount: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.094] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,073 INFO Computed dtype for MonthlyLoan: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.095] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,073 INFO Computed dtype for MonthlyLoan_Percentage: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.096] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,073 INFO Computed dtype for Loan_Amount_Term: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.096] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,074 INFO Computed dtype for Credit_History: str (schema_type=boolean feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.098] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,074 INFO Computed dtype for Property_Area: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.098] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,074 INFO Computed dtype for Loan_Status: <type 'numpy.object_'> (schema_type=boolean feature_type=CATEGORY feature_role=TARGET)
+[2020/07/03-23:49:14.099] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,074 INFO Reading with FIXED dtypes: {u'TotalIncome': <type 'numpy.float64'>, u'Property_Area': 'str', u'CoapplicantIncome': <type 'numpy.float64'>, u'LoanAmount': <type 'numpy.float64'>, u'Gender': 'str', u'MonthlyLoan': <type 'numpy.float64'>, u'Married': 'str', u'ApplicantIncome': <type 'numpy.float64'>, u'Loan_Amount_Term': <type 'numpy.float64'>, u'Self_Employed': 'str', u'Loan_Status': <type 'numpy.object_'>, u'Dependents': 'str', u'Education': 'str', u'Credit_History': 'str', u'MonthlyLoan_Percentage': <type 'numpy.float64'>}
+[2020/07/03-23:49:14.100] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,089 INFO Loaded table
+[2020/07/03-23:49:14.100] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,091 INFO  Coercion done
+[2020/07/03-23:49:14.101] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,092 INFO Loaded train df: shape=(416,15)
+[2020/07/03-23:49:14.103] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,092 INFO END -  Loading train set
+[2020/07/03-23:49:14.106] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,092 INFO START -  Loading test set
+[2020/07/03-23:49:14.107] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,093 INFO Reading with dtypes: None
+[2020/07/03-23:49:14.108] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,093 INFO Computed dtype for Gender: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.109] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,093 INFO Computed dtype for Married: str (schema_type=boolean feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.112] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,093 INFO Computed dtype for Dependents: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.113] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,093 INFO Computed dtype for Education: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.114] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,093 INFO Computed dtype for Self_Employed: str (schema_type=boolean feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.115] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,093 INFO Computed dtype for ApplicantIncome: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.118] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,094 INFO Computed dtype for CoapplicantIncome: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.118] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,094 INFO Computed dtype for TotalIncome: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.119] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,094 INFO Computed dtype for LoanAmount: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.121] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,094 INFO Computed dtype for MonthlyLoan: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.123] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,094 INFO Computed dtype for MonthlyLoan_Percentage: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.124] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,094 INFO Computed dtype for Loan_Amount_Term: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/07/03-23:49:14.125] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,094 INFO Computed dtype for Credit_History: str (schema_type=boolean feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.127] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,094 INFO Computed dtype for Property_Area: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/07/03-23:49:14.128] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,094 INFO Computed dtype for Loan_Status: <type 'numpy.object_'> (schema_type=boolean feature_type=CATEGORY feature_role=TARGET)
+[2020/07/03-23:49:14.129] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,094 INFO Reading with FIXED dtypes: {u'TotalIncome': <type 'numpy.float64'>, u'Property_Area': 'str', u'CoapplicantIncome': <type 'numpy.float64'>, u'LoanAmount': <type 'numpy.float64'>, u'Gender': 'str', u'MonthlyLoan': <type 'numpy.float64'>, u'Married': 'str', u'ApplicantIncome': <type 'numpy.float64'>, u'Loan_Amount_Term': <type 'numpy.float64'>, u'Self_Employed': 'str', u'Loan_Status': <type 'numpy.object_'>, u'Dependents': 'str', u'Education': 'str', u'Credit_History': 'str', u'MonthlyLoan_Percentage': <type 'numpy.float64'>}
+[2020/07/03-23:49:14.132] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,101 INFO Loaded table
+[2020/07/03-23:49:14.135] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,103 INFO  Coercion done
+[2020/07/03-23:49:14.137] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,103 INFO Loaded test df: shape=(113,15)
+[2020/07/03-23:49:14.138] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,104 INFO END -  Loading test set
+[2020/07/03-23:49:14.139] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,104 INFO START -  Collecting preprocessing data
+[2020/07/03-23:49:14.142] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,104 INFO Looking at TotalIncome... (type=NUMERIC)
+[2020/07/03-23:49:14.143] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,105 INFO Checking series of type: float64 (isM8=False)
+[2020/07/03-23:49:14.144] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,107 INFO Looking at Property_Area... (type=CATEGORY)
+[2020/07/03-23:49:14.147] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,111 INFO Looking at CoapplicantIncome... (type=NUMERIC)
+[2020/07/03-23:49:14.148] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,111 INFO Checking series of type: float64 (isM8=False)
+[2020/07/03-23:49:14.149] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,112 INFO Looking at LoanAmount... (type=NUMERIC)
+[2020/07/03-23:49:14.152] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,112 INFO Checking series of type: float64 (isM8=False)
+[2020/07/03-23:49:14.153] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,114 INFO Looking at Gender... (type=CATEGORY)
+[2020/07/03-23:49:14.156] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,117 INFO Looking at MonthlyLoan... (type=NUMERIC)
+[2020/07/03-23:49:14.157] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,117 INFO Checking series of type: float64 (isM8=False)
+[2020/07/03-23:49:14.161] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,119 INFO Looking at Married... (type=CATEGORY)
+[2020/07/03-23:49:14.162] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,123 INFO Looking at ApplicantIncome... (type=NUMERIC)
+[2020/07/03-23:49:14.163] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,123 INFO Checking series of type: float64 (isM8=False)
+[2020/07/03-23:49:14.166] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,124 INFO Looking at Loan_Amount_Term... (type=NUMERIC)
+[2020/07/03-23:49:14.167] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,125 INFO Checking series of type: float64 (isM8=False)
+[2020/07/03-23:49:14.168] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,127 INFO Looking at Self_Employed... (type=CATEGORY)
+[2020/07/03-23:49:14.168] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,131 INFO Looking at Loan_Status... (type=CATEGORY)
+[2020/07/03-23:49:14.169] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,131 INFO Looking at MonthlyLoan_Percentage... (type=NUMERIC)
+[2020/07/03-23:49:14.170] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,132 INFO Checking series of type: float64 (isM8=False)
+[2020/07/03-23:49:14.170] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,134 INFO Looking at Education... (type=CATEGORY)
+[2020/07/03-23:49:14.171] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,138 INFO Looking at Credit_History... (type=CATEGORY)
+[2020/07/03-23:49:14.172] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,142 INFO Looking at Dependents... (type=CATEGORY)
+[2020/07/03-23:49:14.173] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,146 INFO generating interactions
+[2020/07/03-23:49:14.175] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,147 INFO {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'CORRELATION', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [{u'mappedValue': 0, u'sourceValue': u'Y', u'sampleFreq': 403}, {u'mappedValue': 1, u'sourceValue': u'N', u'sampleFreq': 175}], u'per_feature': {u'TotalIncome': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Property_Area': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'CoapplicantIncome': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'LoanAmount': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Gender': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Gender', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'MonthlyLoan': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Married': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Boolean', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'ApplicantIncome': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Loan_Amount_Term': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Self_Employed': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Boolean', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Loan_Status': {u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Boolean', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'dummy_drop': u'NONE', u'min_samples': 10, u'type': u'CATEGORY', u'max_cat_safety': 200}, u'MonthlyLoan_Percentage': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Education': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Credit_History': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Boolean', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Dependents': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'DISABLED'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020/07/03-23:49:14.177] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,147 INFO Performing feature reduction
+[2020/07/03-23:49:14.178] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,151 INFO END -  Collecting preprocessing data
+[2020/07/03-23:49:14.179] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,151 INFO START -  Preprocessing train set
+[2020/07/03-23:49:14.180] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,151 INFO Set MF index len 416
+[2020/07/03-23:49:14.180] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,151 DEBUG FIT/PROCESS WITH Step:RemapValueToOutput
+[2020/07/03-23:49:14.182] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,155 DEBUG FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/07/03-23:49:14.182] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,155 DEBUG MIMIFI: Imputing with map {u'TotalIncome': 6985.156538463558, u'CoapplicantIncome': 1610.4353846174038, u'LoanAmount': 145372.59615384616, u'MonthlyLoan': 454.6875, u'ApplicantIncome': 5374.721153846154, u'Loan_Amount_Term': 343.41346153846155, u'MonthlyLoan_Percentage': 7.4987959535806485}
+[2020/07/03-23:49:14.185] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,160 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (TotalIncome)
+[2020/07/03-23:49:14.186] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,160 DEBUG   Rescale TotalIncome (avg=6985.15653846 std=6159.02675676 shift=6985.15653846 inv_scale=0.000162363314772)
+[2020/07/03-23:49:14.187] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,180 DEBUG   Rescaled TotalIncome (avg=-4.40352882363e-18 std=1.0) nulls=0
+[2020/07/03-23:49:14.188] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,180 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (CoapplicantIncome)
+[2020/07/03-23:49:14.189] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,180 DEBUG   Rescale CoapplicantIncome (avg=1610.43538462 std=2714.30958343 shift=1610.43538462 inv_scale=0.000368417812804)
+[2020/07/03-23:49:14.192] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,182 DEBUG   Rescaled CoapplicantIncome (avg=-1.60128320859e-17 std=1.0) nulls=0
+[2020/07/03-23:49:14.193] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,182 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (LoanAmount)
+[2020/07/03-23:49:14.194] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,184 DEBUG   Rescale LoanAmount (avg=145372.596154 std=74823.0884989 shift=145372.596154 inv_scale=1.33648586294e-05)
+[2020/07/03-23:49:14.195] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,186 DEBUG   Rescaled LoanAmount (avg=-2.68214937439e-17 std=1.0) nulls=0
+[2020/07/03-23:49:14.196] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,186 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (MonthlyLoan)
+[2020/07/03-23:49:14.196] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,186 DEBUG   Rescale MonthlyLoan (avg=454.6875 std=352.641240182 shift=454.6875 inv_scale=0.00283574320316)
+[2020/07/03-23:49:14.197] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,188 DEBUG   Rescaled MonthlyLoan (avg=-1.39445079415e-17 std=1.0) nulls=0
+[2020/07/03-23:49:14.198] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,189 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (ApplicantIncome)
+[2020/07/03-23:49:14.198] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,189 DEBUG   Rescale ApplicantIncome (avg=5374.72115385 std=5901.72975617 shift=5374.72115385 inv_scale=0.00016944184863)
+[2020/07/03-23:49:14.199] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,190 DEBUG   Rescaled ApplicantIncome (avg=-5.32426666857e-17 std=1.0) nulls=0
+[2020/07/03-23:49:14.199] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,191 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (Loan_Amount_Term)
+[2020/07/03-23:49:14.200] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,191 DEBUG   Rescale Loan_Amount_Term (avg=343.413461538 std=64.3616454786 shift=343.413461538 inv_scale=0.015537203758)
+[2020/07/03-23:49:14.201] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,192 DEBUG   Rescaled Loan_Amount_Term (avg=-2.33253587385e-16 std=1.0) nulls=0
+[2020/07/03-23:49:14.201] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,193 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (MonthlyLoan_Percentage)
+[2020/07/03-23:49:14.202] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,193 DEBUG   Rescale MonthlyLoan_Percentage (avg=7.49879595358 std=6.55936186781 shift=7.49879595358 inv_scale=0.152453854529)
+[2020/07/03-23:49:14.203] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,195 DEBUG   Rescaled MonthlyLoan_Percentage (avg=1.3357370765e-16 std=1.0) nulls=0
+[2020/07/03-23:49:14.204] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,195 DEBUG FIT/PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020/07/03-23:49:14.204] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,195 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Property_Area)
+[2020/07/03-23:49:14.205] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,200 DEBUG Dummifier: Append a sparse block shape=(416, 5) nnz=416
+[2020/07/03-23:49:14.206] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,200 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Gender)
+[2020/07/03-23:49:14.207] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,205 DEBUG Dummifier: Append a sparse block shape=(416, 4) nnz=416
+[2020/07/03-23:49:14.210] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,205 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Married)
+[2020/07/03-23:49:14.211] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,209 DEBUG Dummifier: Append a sparse block shape=(416, 4) nnz=416
+[2020/07/03-23:49:14.212] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,209 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Self_Employed)
+[2020/07/03-23:49:14.213] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,213 DEBUG Dummifier: Append a sparse block shape=(416, 4) nnz=416
+[2020/07/03-23:49:14.217] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,213 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Education)
+[2020/07/03-23:49:14.220] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,218 DEBUG Dummifier: Append a sparse block shape=(416, 4) nnz=416
+[2020/07/03-23:49:14.221] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,219 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Credit_History)
+[2020/07/03-23:49:14.225] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,224 DEBUG Dummifier: Append a sparse block shape=(416, 4) nnz=416
+[2020/07/03-23:49:14.228] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,224 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Dependents)
+[2020/07/03-23:49:14.231] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,230 DEBUG Dummifier: Append a sparse block shape=(416, 6) nnz=416
+[2020/07/03-23:49:14.237] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,230 DEBUG FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/07/03-23:49:14.244] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,230 DEBUG MIMIFI: Imputing with map {}
+[2020/07/03-23:49:14.248] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,230 DEBUG FIT/PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020/07/03-23:49:14.249] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,231 DEBUG FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/07/03-23:49:14.251] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,231 DEBUG MIMIFI: Imputing with map {}
+[2020/07/03-23:49:14.254] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,231 DEBUG FIT/PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020/07/03-23:49:14.255] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,232 DEBUG FIT/PROCESS WITH Step:RealignTarget
+[2020/07/03-23:49:14.256] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,232 DEBUG Realign target series = (416,)
+[2020/07/03-23:49:14.257] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,235 DEBUG After realign target: (416,)
+[2020/07/03-23:49:14.258] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,236 DEBUG FIT/PROCESS WITH Step:DropRowsWhereNoTarget
+[2020/07/03-23:49:14.262] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,237 DEBUG Deleting 0 rows because no target
+[2020/07/03-23:49:14.265] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,238 DEBUG MF before = (416, 38) target before = (416,)
+[2020/07/03-23:49:14.267] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,241 INFO MultiFrame, dropping rows: []
+[2020/07/03-23:49:14.273] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,257 DEBUG After DRWNT input_df=(416, 15)
+[2020/07/03-23:49:14.277] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,257 DEBUG MF after = (416, 38) target after = (416,)
+[2020/07/03-23:49:14.279] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,257 DEBUG FIT/PROCESS WITH Step:DumpPipelineState
+[2020/07/03-23:49:14.291] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,257 DEBUG ********* Pipeline state (Before feature selection)
+[2020/07/03-23:49:14.292] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,257 DEBUG    input_df= (416, 15) 
+[2020/07/03-23:49:14.294] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,257 DEBUG    current_mf=(416, 38) 
+[2020/07/03-23:49:14.295] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,257 DEBUG    PPR: 
+[2020/07/03-23:49:14.296] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,258 DEBUG       target = <class 'pandas.core.series.Series'> ((416,))
+[2020/07/03-23:49:14.296] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,258 DEBUG FIT/PROCESS WITH Step:FeatureSelectionStep
+[2020/07/03-23:49:14.298] [null-err-38] [INFO] [dku.utils]  - //Applications/DataScienceStudio.app/Contents/Resources/kit/python.packages/sklearn/feature_selection/univariate_selection.py:114: UserWarning: Features [0 0] are constant.
+[2020/07/03-23:49:14.300] [null-err-38] [INFO] [dku.utils]  -   UserWarning)
+[2020/07/03-23:49:14.301] [null-err-38] [INFO] [dku.utils]  - //Applications/DataScienceStudio.app/Contents/Resources/kit/python.packages/sklearn/feature_selection/univariate_selection.py:115: RuntimeWarning: invalid value encountered in divide
+[2020/07/03-23:49:14.303] [null-err-38] [INFO] [dku.utils]  -   f = msb / msw
+[2020/07/03-23:49:14.306] [null-err-38] [INFO] [dku.utils]  - //Applications/DataScienceStudio.app/Contents/Resources/kit/python.packages/sklearn/feature_selection/univariate_selection.py:114: UserWarning: Features [0] are constant.
+[2020/07/03-23:49:14.311] [null-err-38] [INFO] [dku.utils]  -   UserWarning)
+[2020/07/03-23:49:14.321] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,321 DEBUG FIT/PROCESS WITH Step:EmitCurrentMFAsResult
+[2020/07/03-23:49:14.322] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,321 INFO Set MF index len 416
+[2020/07/03-23:49:14.323] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,321 DEBUG FIT/PROCESS WITH Step:DumpPipelineState
+[2020/07/03-23:49:14.324] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,321 DEBUG ********* Pipeline state (At end)
+[2020/07/03-23:49:14.325] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,321 DEBUG    input_df= (416, 15) 
+[2020/07/03-23:49:14.326] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,321 DEBUG    current_mf=(0, 0) 
+[2020/07/03-23:49:14.329] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,321 DEBUG    PPR: 
+[2020/07/03-23:49:14.330] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,322 DEBUG       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((416, 15))
+[2020/07/03-23:49:14.330] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,322 DEBUG       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((416, 25))
+[2020/07/03-23:49:14.331] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,322 DEBUG       target = <class 'pandas.core.series.Series'> ((416,))
+[2020/07/03-23:49:14.332] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,324 INFO END -  Preprocessing train set
+[2020/07/03-23:49:14.333] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,325 INFO START -  Preprocessing test set
+[2020/07/03-23:49:14.333] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,325 INFO Set MF index len 113
+[2020/07/03-23:49:14.334] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,325 DEBUG PROCESS WITH Step:RemapValueToOutput
+[2020/07/03-23:49:14.335] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,328 DEBUG PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/07/03-23:49:14.336] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,328 DEBUG MIMIFI: Imputing with map {u'TotalIncome': 6985.156538463558, u'CoapplicantIncome': 1610.4353846174038, u'LoanAmount': 145372.59615384616, u'MonthlyLoan': 454.6875, u'ApplicantIncome': 5374.721153846154, u'Loan_Amount_Term': 343.41346153846155, u'MonthlyLoan_Percentage': 7.4987959535806485}
+[2020/07/03-23:49:14.337] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,331 DEBUG PROCESS WITH Step:RescalingProcessor2 (TotalIncome)
+[2020/07/03-23:49:14.338] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,331 DEBUG   Rescale TotalIncome (avg=7289.73274325 std=8003.97491388 shift=6985.15653846 inv_scale=0.000162363314772)
+[2020/07/03-23:49:14.338] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,333 DEBUG   Rescaled TotalIncome (avg=0.0494520022107 std=1.29955189837) nulls=0
+[2020/07/03-23:49:14.339] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,333 DEBUG PROCESS WITH Step:RescalingProcessor2 (CoapplicantIncome)
+[2020/07/03-23:49:14.340] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,333 DEBUG   Rescale CoapplicantIncome (avg=1291.90973441 std=1630.98898439 shift=1610.43538462 inv_scale=0.000368417812804)
+[2020/07/03-23:49:14.341] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,335 DEBUG   Rescaled CoapplicantIncome (avg=-0.117350523373 std=0.600885394337) nulls=0
+[2020/07/03-23:49:14.341] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,335 DEBUG PROCESS WITH Step:RescalingProcessor2 (LoanAmount)
+[2020/07/03-23:49:14.342] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,335 DEBUG   Rescale LoanAmount (avg=147619.469027 std=112256.348737 shift=145372.596154 inv_scale=1.33648586294e-05)
+[2020/07/03-23:49:14.342] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,337 DEBUG   Rescaled LoanAmount (avg=0.0300291383018 std=1.50029023112) nulls=0
+[2020/07/03-23:49:14.343] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,337 DEBUG PROCESS WITH Step:RescalingProcessor2 (MonthlyLoan)
+[2020/07/03-23:49:14.343] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,338 DEBUG   Rescale MonthlyLoan (avg=490.601769912 std=461.354537899 shift=454.6875 inv_scale=0.00283574320316)
+[2020/07/03-23:49:14.344] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,339 DEBUG   Rescaled MonthlyLoan (avg=0.101843646798 std=1.30828299509) nulls=0
+[2020/07/03-23:49:14.344] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,339 DEBUG PROCESS WITH Step:RescalingProcessor2 (ApplicantIncome)
+[2020/07/03-23:49:14.345] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,340 DEBUG   Rescale ApplicantIncome (avg=5997.82300885 std=7998.71315792 shift=5374.72115385 inv_scale=0.00016944184863)
+[2020/07/03-23:49:14.345] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,341 DEBUG   Rescaled ApplicantIncome (avg=0.105579530197 std=1.35531674414) nulls=0
+[2020/07/03-23:49:14.346] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,342 DEBUG PROCESS WITH Step:RescalingProcessor2 (Loan_Amount_Term)
+[2020/07/03-23:49:14.347] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,342 DEBUG   Rescale Loan_Amount_Term (avg=338.442477876 std=66.816237608 shift=343.413461538 inv_scale=0.015537203758)
+[2020/07/03-23:49:14.347] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,344 DEBUG   Rescaled Loan_Amount_Term (avg=-0.0772351860396 std=1.03813749806) nulls=0
+[2020/07/03-23:49:14.348] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,344 DEBUG PROCESS WITH Step:RescalingProcessor2 (MonthlyLoan_Percentage)
+[2020/07/03-23:49:14.348] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,344 DEBUG   Rescale MonthlyLoan_Percentage (avg=7.78225056829 std=7.08393044352 shift=7.49879595358 inv_scale=0.152453854529)
+[2020/07/03-23:49:14.351] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,346 DEBUG   Rescaled MonthlyLoan_Percentage (avg=0.0432137485965 std=1.07997250133) nulls=0
+[2020/07/03-23:49:14.353] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,347 DEBUG PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020/07/03-23:49:14.354] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,347 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Property_Area)
+[2020/07/03-23:49:14.355] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,351 DEBUG Dummifier: Append a sparse block shape=(113, 5) nnz=113
+[2020/07/03-23:49:14.356] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,352 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Gender)
+[2020/07/03-23:49:14.359] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,357 DEBUG Dummifier: Append a sparse block shape=(113, 4) nnz=113
+[2020/07/03-23:49:14.360] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,357 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Married)
+[2020/07/03-23:49:14.360] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,360 DEBUG Dummifier: Append a sparse block shape=(113, 4) nnz=113
+[2020/07/03-23:49:14.361] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,360 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Self_Employed)
+[2020/07/03-23:49:14.363] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,363 DEBUG Dummifier: Append a sparse block shape=(113, 4) nnz=113
+[2020/07/03-23:49:14.365] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,363 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Education)
+[2020/07/03-23:49:14.369] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,369 DEBUG Dummifier: Append a sparse block shape=(113, 4) nnz=113
+[2020/07/03-23:49:14.370] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,369 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Credit_History)
+[2020/07/03-23:49:14.374] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,374 DEBUG Dummifier: Append a sparse block shape=(113, 4) nnz=113
+[2020/07/03-23:49:14.375] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,374 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Dependents)
+[2020/07/03-23:49:14.380] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,379 DEBUG Dummifier: Append a sparse block shape=(113, 6) nnz=113
+[2020/07/03-23:49:14.381] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,380 DEBUG PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/07/03-23:49:14.383] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,381 DEBUG MIMIFI: Imputing with map {}
+[2020/07/03-23:49:14.384] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,381 DEBUG PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020/07/03-23:49:14.386] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,381 DEBUG PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/07/03-23:49:14.387] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,381 DEBUG MIMIFI: Imputing with map {}
+[2020/07/03-23:49:14.389] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,381 DEBUG PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020/07/03-23:49:14.390] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,381 DEBUG PROCESS WITH Step:RealignTarget
+[2020/07/03-23:49:14.390] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,381 DEBUG Realign target series = (113,)
+[2020/07/03-23:49:14.391] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,382 DEBUG After realign target: (113,)
+[2020/07/03-23:49:14.393] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,382 DEBUG PROCESS WITH Step:DropRowsWhereNoTarget
+[2020/07/03-23:49:14.394] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,383 DEBUG Deleting 0 rows because no target
+[2020/07/03-23:49:14.397] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,383 DEBUG MF before = (113, 38) target before = (113,)
+[2020/07/03-23:49:14.458] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,385 INFO MultiFrame, dropping rows: []
+[2020/07/03-23:49:14.476] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,443 DEBUG After DRWNT input_df=(113, 15)
+[2020/07/03-23:49:14.486] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,444 DEBUG MF after = (113, 38) target after = (113,)
+[2020/07/03-23:49:14.487] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,444 DEBUG PROCESS WITH Step:DumpPipelineState
+[2020/07/03-23:49:14.488] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,444 DEBUG ********* Pipeline state (Before feature selection)
+[2020/07/03-23:49:14.489] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,444 DEBUG    input_df= (113, 15) 
+[2020/07/03-23:49:14.489] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,445 DEBUG    current_mf=(113, 38) 
+[2020/07/03-23:49:14.490] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,445 DEBUG    PPR: 
+[2020/07/03-23:49:14.494] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,445 DEBUG       target = <class 'pandas.core.series.Series'> ((113,))
+[2020/07/03-23:49:14.494] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,445 DEBUG PROCESS WITH Step:FeatureSelectionStep
+[2020/07/03-23:49:14.498] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,454 DEBUG PROCESS WITH Step:EmitCurrentMFAsResult
+[2020/07/03-23:49:14.499] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,454 INFO Set MF index len 113
+[2020/07/03-23:49:14.500] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,454 DEBUG PROCESS WITH Step:DumpPipelineState
+[2020/07/03-23:49:14.501] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,454 DEBUG ********* Pipeline state (At end)
+[2020/07/03-23:49:14.502] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,455 DEBUG    input_df= (113, 15) 
+[2020/07/03-23:49:14.503] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,455 DEBUG    current_mf=(0, 0) 
+[2020/07/03-23:49:14.504] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,455 DEBUG    PPR: 
+[2020/07/03-23:49:14.505] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,455 DEBUG       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((113, 15))
+[2020/07/03-23:49:14.506] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,455 DEBUG       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((113, 25))
+[2020/07/03-23:49:14.508] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,455 DEBUG       target = <class 'pandas.core.series.Series'> ((113,))
+[2020/07/03-23:49:14.510] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,455 INFO END -  Preprocessing test set
+[2020/07/03-23:49:14.511] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,455 INFO START -  Grid searching
+[2020/07/03-23:49:14.512] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,456 INFO prepare multiframe shape=(416,25) tn=10400 nnz=5020 fill_ratio=0.48
+[2020/07/03-23:49:14.512] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,456 INFO too small, using array
+[2020/07/03-23:49:14.513] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,456 INFO Create CLF from params: {u'computeLearningCurves': False, u'algorithm': u'RANDOM_FOREST_CLASSIFICATION', u'grid_search_params': {u'nIter': 0, u'nJobs': 4, u'strategy': u'GRID', u'randomized': True, u'shuffleIterations': 1, u'mode': u'KFOLD', u'timeout': 0, u'splitRatio': 0.8, u'nFolds': 3, u'stratified': True}, u'autoOptimizeThreshold': True, u'gridLength': 2, u'metrics': {u'customEvaluationMetricGIB': True, u'customEvaluationMetricNeedsProba': False, u'thresholdOptimizationMetric': u'F1', u'liftPoint': 0.4, u'costMatrixWeights': {u'fnGain': 0.0, u'tpGain': 1.0, u'tnGain': 0.0, u'fpGain': -0.3}, u'evaluationMetric': u'ROC_AUC'}, u'forcedClassifierThreshold': 0.0, u'rf_classifier_grid': {u'n_jobs': 4, u'max_tree_depth': {u'gridMode': u'EXPLICIT', u'values': [6, 13], u'nValues': 0}, u'selection_mode': u'auto', u'enabled': True, u'min_samples_leaf': {u'gridMode': u'EXPLICIT', u'values': [1], u'nValues': 0}, u'n_estimators': {u'gridMode': u'EXPLICIT', u'values': [100], u'nValues': 0}, u'max_feature_prop': 0.3, u'max_features': {u'gridMode': u'EXPLICIT', u'values': [5], u'nValues': 0}}, u'max_ensemble_nodes_serialized': 6000, u'pluginAlgoCustomGridSearch': False, u'skipExpensiveReports': False} for algorithm RANDOM_FOREST_CLASSIFICATION
+[2020/07/03-23:49:14.531] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,456 INFO Using stratified K-Fold CV with k=3
+[2020/07/03-23:49:14.533] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,456 INFO Building Gridsearcher for hyperparameters space: <dataiku.doctor.prediction.common.TreesHyperparametersSpace object at 0x112eb3610>
+[2020/07/03-23:49:14.534] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,471 INFO Fitting 3 folds for each of 2 candidates, totalling 6 fits
+[2020/07/03-23:49:14.535] [null-err-38] [INFO] [dku.utils]  - [Parallel(n_jobs=4)]: Using backend ThreadingBackend with 4 concurrent workers.
+[2020/07/03-23:49:14.536] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,495 INFO Fit  p=1 s=0: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=13, min_samples_leaf=1 
+[2020/07/03-23:49:14.655] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,655 INFO Fit  p=1 s=1: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=13, min_samples_leaf=1 
+[2020/07/03-23:49:14.688] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,685 INFO Fit  p=1 s=2: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=13, min_samples_leaf=1 
+[2020/07/03-23:49:14.731] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:14,731 INFO Fit  p=0 s=0: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=6, min_samples_leaf=1 
+[2020/07/03-23:49:17.285] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:17,285 INFO Done p=1 s=1: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=13, min_samples_leaf=1 (ft=2.2s st=0.5s sc=0.755741626794)
+[2020/07/03-23:49:17.289] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:17,289 INFO Fit  p=0 s=1: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=6, min_samples_leaf=1 
+[2020/07/03-23:49:17.407] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:17,406 INFO Done p=1 s=0: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=13, min_samples_leaf=1 (ft=2.4s st=0.5s sc=0.797846889952)
+[2020/07/03-23:49:17.413] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:17,413 INFO Done p=1 s=2: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=13, min_samples_leaf=1 (ft=2.3s st=0.5s sc=0.815422276622)
+[2020/07/03-23:49:17.415] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:17,415 INFO Done p=0 s=0: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=6, min_samples_leaf=1 (ft=2.1s st=0.6s sc=0.755263157895)
+[2020/07/03-23:49:17.432] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:17,432 INFO Fit  p=0 s=2: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=6, min_samples_leaf=1 
+[2020/07/03-23:49:18.281] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:18,280 INFO Done p=0 s=1: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=6, min_samples_leaf=1 (ft=0.8s st=0.2s sc=0.767464114833)
+[2020/07/03-23:49:18.303] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:18,303 INFO Done p=0 s=2: max_features=auto, n_estimators=100, min_samples_split=3, max_depth=6, min_samples_leaf=1 (ft=0.6s st=0.3s sc=0.796817625459)
+[2020/07/03-23:49:18.305] [null-err-38] [INFO] [dku.utils]  - [Parallel(n_jobs=4)]: Done   6 out of   6 | elapsed:    3.8s finished
+[2020/07/03-23:49:18.682] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:18,682 INFO Grid search ended, got 6 scores out of 6
+[2020/07/03-23:49:18.684] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:18,684 INFO Grid search done, best_parameters being : {'max_features': u'auto', 'n_estimators': 100, 'min_samples_split': 3, 'max_depth': 13, 'min_samples_leaf': 1}
+[2020/07/03-23:49:18.687] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:18,687 INFO END -  Grid searching
+[2020/07/03-23:49:18.689] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:18,687 INFO START -  Fitting model
+[2020/07/03-23:49:18.690] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:18,688 INFO Fitting model:
+[2020/07/03-23:49:18.691] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:18,690 INFO   Model is: RandomForestClassifier(bootstrap=True,
+[2020/07/03-23:49:18.692] [null-err-38] [INFO] [dku.utils]  -             class_weight={0: 0.7298245614035088, 1: 1.5877862595419847},
+[2020/07/03-23:49:18.693] [null-err-38] [INFO] [dku.utils]  -             criterion='gini', max_depth=13, max_features=u'auto',
+[2020/07/03-23:49:18.694] [null-err-38] [INFO] [dku.utils]  -             max_leaf_nodes=None, min_impurity_decrease=0.0,
+[2020/07/03-23:49:18.695] [null-err-38] [INFO] [dku.utils]  -             min_impurity_split=None, min_samples_leaf=1,
+[2020/07/03-23:49:18.696] [null-err-38] [INFO] [dku.utils]  -             min_samples_split=3, min_weight_fraction_leaf=0.0,
+[2020/07/03-23:49:18.697] [null-err-38] [INFO] [dku.utils]  -             n_estimators=100, n_jobs=4, oob_score=False, random_state=1337,
+[2020/07/03-23:49:18.700] [null-err-38] [INFO] [dku.utils]  -             verbose=0, warm_start=False)
+[2020/07/03-23:49:18.700] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:18,690 INFO   train_X class: <type 'numpy.ndarray'>
+[2020/07/03-23:49:18.701] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:18,690 INFO   train_X shape: (416, 25)
+[2020/07/03-23:49:18.701] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:18,690 INFO   train_y shape: (416,)
+[2020/07/03-23:49:19.004] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,004 INFO Obtained RF CLF params: {'warm_start': False, 'oob_score': False, 'n_jobs': 4, 'min_impurity_decrease': 0.0, 'verbose': 0, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 1, 'n_estimators': 100, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'criterion': 'gini', 'random_state': 1337, 'min_impurity_split': None, 'max_features': u'auto', 'max_depth': 13, 'class_weight': {0: 0.7298245614035088, 1: 1.5877862595419847}} 
+[2020/07/03-23:49:19.005] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,004 INFO Output params are {'resolved': {'rf': {'max_tree_depth': 13, 'selection_mode': u'auto', 'min_samples_leaf': 1, 'estimators': 100}, 'skipExpensiveReports': False, 'algorithm': u'RANDOM_FOREST_CLASSIFICATION'}, 'other': {'rf_min_samples_split': 3}}
+[2020/07/03-23:49:19.007] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,004 INFO END -  Fitting model
+[2020/07/03-23:49:19.009] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,004 INFO START -  Saving model
+[2020/07/03-23:49:19.010] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,006 INFO PICKLING RandomForestClassifier(bootstrap=True,
+[2020/07/03-23:49:19.013] [null-err-38] [INFO] [dku.utils]  -             class_weight={0: 0.7298245614035088, 1: 1.5877862595419847},
+[2020/07/03-23:49:19.015] [null-err-38] [INFO] [dku.utils]  -             criterion='gini', max_depth=13, max_features=u'auto',
+[2020/07/03-23:49:19.016] [null-err-38] [INFO] [dku.utils]  -             max_leaf_nodes=None, min_impurity_decrease=0.0,
+[2020/07/03-23:49:19.019] [null-err-38] [INFO] [dku.utils]  -             min_impurity_split=None, min_samples_leaf=1,
+[2020/07/03-23:49:19.019] [null-err-38] [INFO] [dku.utils]  -             min_samples_split=3, min_weight_fraction_leaf=0.0,
+[2020/07/03-23:49:19.020] [null-err-38] [INFO] [dku.utils]  -             n_estimators=100, n_jobs=4, oob_score=False, random_state=1337,
+[2020/07/03-23:49:19.021] [null-err-38] [INFO] [dku.utils]  -             verbose=0, warm_start=False)
+[2020/07/03-23:49:19.061] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,061 INFO END -  Saving model
+[2020/07/03-23:49:19.062] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,061 INFO START -  Scoring model
+[2020/07/03-23:49:19.063] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,062 INFO Intrinsic scoring
+[2020/07/03-23:49:19.288] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,288 INFO Computing feature importance
+[2020/07/03-23:49:19.289] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,288 INFO Extracting rescalers
+[2020/07/03-23:49:19.291] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,289 INFO Creating random forest trees summary
+[2020/07/03-23:49:19.468] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,467 INFO prepare multiframe shape=(113,25) tn=2825 nnz=1365 fill_ratio=0.48
+[2020/07/03-23:49:19.468] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,468 INFO too small, using array
+[2020/07/03-23:49:19.711] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,711 INFO Probas raw shape 113/2 target_map=2
+[2020/07/03-23:49:19.725] [null-err-38] [INFO] [dku.utils]  - //Applications/DataScienceStudio.app/Contents/Resources/kit/python.packages/sklearn/metrics/classification.py:543: RuntimeWarning: invalid value encountered in double_scalars
+[2020/07/03-23:49:19.727] [null-err-38] [INFO] [dku.utils]  -   mcc = cov_ytyp / np.sqrt(cov_ytyt * cov_ypyp)
+[2020/07/03-23:49:19.900] [null-err-38] [INFO] [dku.utils]  - //Applications/DataScienceStudio.app/Contents/Resources/kit/python.packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 due to no predicted samples.
+[2020/07/03-23:49:19.900] [null-err-38] [INFO] [dku.utils]  -   'precision', 'predicted', average, warn_for)
+[2020/07/03-23:49:19.902] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,902 INFO Starting threshold optim
+[2020/07/03-23:49:19.904] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,904 INFO AT CUT 0.000000 score 0.441379 (pred_true=113)
+[2020/07/03-23:49:19.905] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,905 INFO AT CUT 0.025000 score 0.453901 (pred_true=109)
+[2020/07/03-23:49:19.907] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,907 INFO AT CUT 0.050000 score 0.467153 (pred_true=105)
+[2020/07/03-23:49:19.909] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,909 INFO AT CUT 0.075000 score 0.500000 (pred_true=96)
+[2020/07/03-23:49:19.910] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,910 INFO AT CUT 0.100000 score 0.496000 (pred_true=93)
+[2020/07/03-23:49:19.912] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,912 INFO AT CUT 0.125000 score 0.482759 (pred_true=84)
+[2020/07/03-23:49:19.914] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,914 INFO AT CUT 0.150000 score 0.500000 (pred_true=76)
+[2020/07/03-23:49:19.917] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,916 INFO AT CUT 0.175000 score 0.520000 (pred_true=68)
+[2020/07/03-23:49:19.919] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,919 INFO AT CUT 0.200000 score 0.537634 (pred_true=61)
+[2020/07/03-23:49:19.921] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,921 INFO AT CUT 0.225000 score 0.545455 (pred_true=56)
+[2020/07/03-23:49:19.923] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,923 INFO AT CUT 0.250000 score 0.560976 (pred_true=50)
+[2020/07/03-23:49:19.924] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,924 INFO AT CUT 0.275000 score 0.513514 (pred_true=42)
+[2020/07/03-23:49:19.925] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,925 INFO AT CUT 0.300000 score 0.542857 (pred_true=38)
+[2020/07/03-23:49:19.927] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,926 INFO AT CUT 0.325000 score 0.492308 (pred_true=33)
+[2020/07/03-23:49:19.928] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,928 INFO AT CUT 0.350000 score 0.500000 (pred_true=28)
+[2020/07/03-23:49:19.929] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,929 INFO AT CUT 0.375000 score 0.518519 (pred_true=22)
+[2020/07/03-23:49:19.931] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,931 INFO AT CUT 0.400000 score 0.518519 (pred_true=22)
+[2020/07/03-23:49:19.933] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,933 INFO AT CUT 0.425000 score 0.549020 (pred_true=19)
+[2020/07/03-23:49:19.934] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,934 INFO AT CUT 0.450000 score 0.560000 (pred_true=18)
+[2020/07/03-23:49:19.935] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,935 INFO AT CUT 0.475000 score 0.530612 (pred_true=17)
+[2020/07/03-23:49:19.937] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,937 INFO AT CUT 0.500000 score 0.530612 (pred_true=17)
+[2020/07/03-23:49:19.939] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,938 INFO AT CUT 0.525000 score 0.510638 (pred_true=15)
+[2020/07/03-23:49:19.940] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,940 INFO AT CUT 0.550000 score 0.521739 (pred_true=14)
+[2020/07/03-23:49:19.941] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,941 INFO AT CUT 0.575000 score 0.521739 (pred_true=14)
+[2020/07/03-23:49:19.943] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,943 INFO AT CUT 0.600000 score 0.521739 (pred_true=14)
+[2020/07/03-23:49:19.945] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,944 INFO AT CUT 0.625000 score 0.521739 (pred_true=14)
+[2020/07/03-23:49:19.946] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,945 INFO AT CUT 0.650000 score 0.533333 (pred_true=13)
+[2020/07/03-23:49:19.947] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,947 INFO AT CUT 0.675000 score 0.533333 (pred_true=13)
+[2020/07/03-23:49:19.949] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,949 INFO AT CUT 0.700000 score 0.533333 (pred_true=13)
+[2020/07/03-23:49:19.951] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,950 INFO AT CUT 0.725000 score 0.533333 (pred_true=13)
+[2020/07/03-23:49:19.952] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,952 INFO AT CUT 0.750000 score 0.533333 (pred_true=13)
+[2020/07/03-23:49:19.953] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,953 INFO AT CUT 0.775000 score 0.533333 (pred_true=13)
+[2020/07/03-23:49:19.955] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,955 INFO AT CUT 0.800000 score 0.465116 (pred_true=11)
+[2020/07/03-23:49:19.957] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,956 INFO AT CUT 0.825000 score 0.465116 (pred_true=11)
+[2020/07/03-23:49:19.958] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,958 INFO AT CUT 0.850000 score 0.465116 (pred_true=11)
+[2020/07/03-23:49:19.960] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,959 INFO AT CUT 0.875000 score 0.400000 (pred_true=8)
+[2020/07/03-23:49:19.961] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,961 INFO AT CUT 0.900000 score 0.315789 (pred_true=6)
+[2020/07/03-23:49:19.963] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,962 INFO AT CUT 0.925000 score 0.315789 (pred_true=6)
+[2020/07/03-23:49:19.964] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,964 INFO AT CUT 0.950000 score 0.171429 (pred_true=3)
+[2020/07/03-23:49:19.966] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,966 INFO AT CUT 0.975000 score 0.000000 (pred_true=0)
+[2020/07/03-23:49:19.968] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,966 INFO Selected threshold 0.25 
+[2020/07/03-23:49:19.969] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,969 INFO preds 0      0
+[2020/07/03-23:49:19.970] [null-err-38] [INFO] [dku.utils]  - 1      0
+[2020/07/03-23:49:19.972] [null-err-38] [INFO] [dku.utils]  - 2      0
+[2020/07/03-23:49:19.973] [null-err-38] [INFO] [dku.utils]  - 3      1
+[2020/07/03-23:49:19.973] [null-err-38] [INFO] [dku.utils]  - 4      0
+[2020/07/03-23:49:19.974] [null-err-38] [INFO] [dku.utils]  - 5      1
+[2020/07/03-23:49:19.975] [null-err-38] [INFO] [dku.utils]  - 6      0
+[2020/07/03-23:49:19.975] [null-err-38] [INFO] [dku.utils]  - 7      0
+[2020/07/03-23:49:19.976] [null-err-38] [INFO] [dku.utils]  - 8      0
+[2020/07/03-23:49:19.977] [null-err-38] [INFO] [dku.utils]  - 9      0
+[2020/07/03-23:49:19.977] [null-err-38] [INFO] [dku.utils]  - 10     1
+[2020/07/03-23:49:19.978] [null-err-38] [INFO] [dku.utils]  - 11     1
+[2020/07/03-23:49:19.979] [null-err-38] [INFO] [dku.utils]  - 12     1
+[2020/07/03-23:49:19.979] [null-err-38] [INFO] [dku.utils]  - 13     0
+[2020/07/03-23:49:19.980] [null-err-38] [INFO] [dku.utils]  - 14     1
+[2020/07/03-23:49:19.981] [null-err-38] [INFO] [dku.utils]  - 15     0
+[2020/07/03-23:49:19.981] [null-err-38] [INFO] [dku.utils]  - 16     1
+[2020/07/03-23:49:19.982] [null-err-38] [INFO] [dku.utils]  - 17     0
+[2020/07/03-23:49:19.983] [null-err-38] [INFO] [dku.utils]  - 18     1
+[2020/07/03-23:49:19.984] [null-err-38] [INFO] [dku.utils]  - 19     1
+[2020/07/03-23:49:19.984] [null-err-38] [INFO] [dku.utils]  - 20     0
+[2020/07/03-23:49:19.985] [null-err-38] [INFO] [dku.utils]  - 21     0
+[2020/07/03-23:49:19.986] [null-err-38] [INFO] [dku.utils]  - 22     0
+[2020/07/03-23:49:19.986] [null-err-38] [INFO] [dku.utils]  - 23     0
+[2020/07/03-23:49:19.987] [null-err-38] [INFO] [dku.utils]  - 24     1
+[2020/07/03-23:49:19.988] [null-err-38] [INFO] [dku.utils]  - 25     0
+[2020/07/03-23:49:19.988] [null-err-38] [INFO] [dku.utils]  - 26     0
+[2020/07/03-23:49:19.989] [null-err-38] [INFO] [dku.utils]  - 27     0
+[2020/07/03-23:49:19.989] [null-err-38] [INFO] [dku.utils]  - 28     0
+[2020/07/03-23:49:19.990] [null-err-38] [INFO] [dku.utils]  - 29     1
+[2020/07/03-23:49:19.990] [null-err-38] [INFO] [dku.utils]  -       ..
+[2020/07/03-23:49:19.991] [null-err-38] [INFO] [dku.utils]  - 83     1
+[2020/07/03-23:49:19.992] [null-err-38] [INFO] [dku.utils]  - 84     0
+[2020/07/03-23:49:19.992] [null-err-38] [INFO] [dku.utils]  - 85     0
+[2020/07/03-23:49:19.993] [null-err-38] [INFO] [dku.utils]  - 86     0
+[2020/07/03-23:49:19.993] [null-err-38] [INFO] [dku.utils]  - 87     1
+[2020/07/03-23:49:19.994] [null-err-38] [INFO] [dku.utils]  - 88     0
+[2020/07/03-23:49:19.995] [null-err-38] [INFO] [dku.utils]  - 89     0
+[2020/07/03-23:49:19.995] [null-err-38] [INFO] [dku.utils]  - 90     1
+[2020/07/03-23:49:19.996] [null-err-38] [INFO] [dku.utils]  - 91     0
+[2020/07/03-23:49:19.997] [null-err-38] [INFO] [dku.utils]  - 92     1
+[2020/07/03-23:49:19.997] [null-err-38] [INFO] [dku.utils]  - 93     0
+[2020/07/03-23:49:19.998] [null-err-38] [INFO] [dku.utils]  - 94     1
+[2020/07/03-23:49:19.998] [null-err-38] [INFO] [dku.utils]  - 95     0
+[2020/07/03-23:49:19.999] [null-err-38] [INFO] [dku.utils]  - 96     0
+[2020/07/03-23:49:19.999] [null-err-38] [INFO] [dku.utils]  - 97     0
+[2020/07/03-23:49:20.000] [null-err-38] [INFO] [dku.utils]  - 98     0
+[2020/07/03-23:49:20.000] [null-err-38] [INFO] [dku.utils]  - 99     0
+[2020/07/03-23:49:20.001] [null-err-38] [INFO] [dku.utils]  - 100    1
+[2020/07/03-23:49:20.001] [null-err-38] [INFO] [dku.utils]  - 101    0
+[2020/07/03-23:49:20.002] [null-err-38] [INFO] [dku.utils]  - 102    1
+[2020/07/03-23:49:20.003] [null-err-38] [INFO] [dku.utils]  - 103    0
+[2020/07/03-23:49:20.003] [null-err-38] [INFO] [dku.utils]  - 104    0
+[2020/07/03-23:49:20.004] [null-err-38] [INFO] [dku.utils]  - 105    0
+[2020/07/03-23:49:20.005] [null-err-38] [INFO] [dku.utils]  - 106    0
+[2020/07/03-23:49:20.006] [null-err-38] [INFO] [dku.utils]  - 107    0
+[2020/07/03-23:49:20.007] [null-err-38] [INFO] [dku.utils]  - 108    1
+[2020/07/03-23:49:20.008] [null-err-38] [INFO] [dku.utils]  - 109    1
+[2020/07/03-23:49:20.008] [null-err-38] [INFO] [dku.utils]  - 110    1
+[2020/07/03-23:49:20.009] [null-err-38] [INFO] [dku.utils]  - 111    0
+[2020/07/03-23:49:20.011] [null-err-38] [INFO] [dku.utils]  - 112    0
+[2020/07/03-23:49:20.011] [null-err-38] [INFO] [dku.utils]  - Name: predicted, Length: 113, dtype: int64
+[2020/07/03-23:49:20.013] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,969 INFO MAPPED SHAPE 113
+[2020/07/03-23:49:20.014] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,970 INFO k=Y v=0
+[2020/07/03-23:49:20.014] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,970 INFO Mask data [ True  True  True False  True False  True  True  True  True False False
+[2020/07/03-23:49:20.019] [null-err-38] [INFO] [dku.utils]  -  False  True False  True False  True False False  True  True  True  True
+[2020/07/03-23:49:20.021] [null-err-38] [INFO] [dku.utils]  -  False  True  True  True  True False  True  True  True False False  True
+[2020/07/03-23:49:20.022] [null-err-38] [INFO] [dku.utils]  -  False  True False False  True False False False False  True  True False
+[2020/07/03-23:49:20.025] [null-err-38] [INFO] [dku.utils]  -   True False  True  True  True  True  True  True False False  True False
+[2020/07/03-23:49:20.026] [null-err-38] [INFO] [dku.utils]  -  False  True False False False False  True False  True False False False
+[2020/07/03-23:49:20.027] [null-err-38] [INFO] [dku.utils]  -   True  True False False False False False False  True  True  True False
+[2020/07/03-23:49:20.029] [null-err-38] [INFO] [dku.utils]  -   True  True  True False  True  True False  True False  True False  True
+[2020/07/03-23:49:20.032] [null-err-38] [INFO] [dku.utils]  -   True  True  True  True False  True False  True  True  True  True  True
+[2020/07/03-23:49:20.033] [null-err-38] [INFO] [dku.utils]  -  False False False  True  True]
+[2020/07/03-23:49:20.034] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,971 INFO mapped pred <type 'numpy.ndarray'>
+[2020/07/03-23:49:20.035] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,971 INFO k=N v=1
+[2020/07/03-23:49:20.036] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,971 INFO Mask data [False False False  True False  True False False False False  True  True
+[2020/07/03-23:49:20.037] [null-err-38] [INFO] [dku.utils]  -   True False  True False  True False  True  True False False False False
+[2020/07/03-23:49:20.038] [null-err-38] [INFO] [dku.utils]  -   True False False False False  True False False False  True  True False
+[2020/07/03-23:49:20.038] [null-err-38] [INFO] [dku.utils]  -   True False  True  True False  True  True  True  True False False  True
+[2020/07/03-23:49:20.039] [null-err-38] [INFO] [dku.utils]  -  False  True False False False False False False  True  True False  True
+[2020/07/03-23:49:20.040] [null-err-38] [INFO] [dku.utils]  -   True False  True  True  True  True False  True False  True  True  True
+[2020/07/03-23:49:20.040] [null-err-38] [INFO] [dku.utils]  -  False False  True  True  True  True  True  True False False False  True
+[2020/07/03-23:49:20.041] [null-err-38] [INFO] [dku.utils]  -  False False False  True False False  True False  True False  True False
+[2020/07/03-23:49:20.042] [null-err-38] [INFO] [dku.utils]  -  False False False False  True False  True False False False False False
+[2020/07/03-23:49:20.046] [null-err-38] [INFO] [dku.utils]  -   True  True  True False False]
+[2020/07/03-23:49:20.047] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,971 INFO mapped pred <type 'numpy.ndarray'>
+[2020/07/03-23:49:20.047] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,972 INFO MAPPED PREDS [u'Y' u'Y' u'Y' u'N' u'Y' u'N' u'Y' u'Y' u'Y' u'Y' u'N' u'N' u'N' u'Y'
+[2020/07/03-23:49:20.048] [null-err-38] [INFO] [dku.utils]  -  u'N' u'Y' u'N' u'Y' u'N' u'N' u'Y' u'Y' u'Y' u'Y' u'N' u'Y' u'Y' u'Y'
+[2020/07/03-23:49:20.049] [null-err-38] [INFO] [dku.utils]  -  u'Y' u'N' u'Y' u'Y' u'Y' u'N' u'N' u'Y' u'N' u'Y' u'N' u'N' u'Y' u'N'
+[2020/07/03-23:49:20.050] [null-err-38] [INFO] [dku.utils]  -  u'N' u'N' u'N' u'Y' u'Y' u'N' u'Y' u'N' u'Y' u'Y' u'Y' u'Y' u'Y' u'Y'
+[2020/07/03-23:49:20.054] [null-err-38] [INFO] [dku.utils]  -  u'N' u'N' u'Y' u'N' u'N' u'Y' u'N' u'N' u'N' u'N' u'Y' u'N' u'Y' u'N'
+[2020/07/03-23:49:20.054] [null-err-38] [INFO] [dku.utils]  -  u'N' u'N' u'Y' u'Y' u'N' u'N' u'N' u'N' u'N' u'N' u'Y' u'Y' u'Y' u'N'
+[2020/07/03-23:49:20.055] [null-err-38] [INFO] [dku.utils]  -  u'Y' u'Y' u'Y' u'N' u'Y' u'Y' u'N' u'Y' u'N' u'Y' u'N' u'Y' u'Y' u'Y'
+[2020/07/03-23:49:20.056] [null-err-38] [INFO] [dku.utils]  -  u'Y' u'Y' u'N' u'Y' u'N' u'Y' u'Y' u'Y' u'Y' u'Y' u'N' u'N' u'N' u'Y'
+[2020/07/03-23:49:20.060] [null-err-38] [INFO] [dku.utils]  -  u'Y']
+[2020/07/03-23:49:20.061] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,980 INFO Total true rate = 32 / 113
+[2020/07/03-23:49:20.062] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,980 INFO Computing lift on first 45 rows
+[2020/07/03-23:49:20.062] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,981 INFO True rate on considered : 45 / 22
+[2020/07/03-23:49:20.063] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:19,981 INFO Lift = 1.726389
+[2020/07/03-23:49:20.119] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,119 INFO Density for Y (id 0)
+[2020/07/03-23:49:20.120] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,119 INFO valid_y shape = (113,)
+[2020/07/03-23:49:20.121] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,119 INFO CP: <type 'numpy.ndarray'> ((113,))
+[2020/07/03-23:49:20.122] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,119 INFO Actual shape = (113,)
+[2020/07/03-23:49:20.123] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,119 INFO MASK is <type 'numpy.ndarray'> 
+[2020/07/03-23:49:20.123] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,121 INFO Class proba [0.93209454 0.89581272 0.86108784 0.84274708 0.97834878 0.87443407
+[2020/07/03-23:49:20.124] [null-err-38] [INFO] [dku.utils]  -  0.87295944 0.64221105 0.95773029 0.7306189  0.83241644 0.71742151
+[2020/07/03-23:49:20.125] [null-err-38] [INFO] [dku.utils]  -  0.66648642 0.79267697 0.95478976 0.83821516 0.94389487 0.62987971
+[2020/07/03-23:49:20.125] [null-err-38] [INFO] [dku.utils]  -  0.84423688 0.89866009 0.75694674 0.85827032 0.47540863 0.81071515
+[2020/07/03-23:49:20.126] [null-err-38] [INFO] [dku.utils]  -  0.79368146 0.75240144 0.63017844 0.63512344 0.71662079 0.94773029
+[2020/07/03-23:49:20.127] [null-err-38] [INFO] [dku.utils]  -  0.69922826 0.69833753 0.94131587 0.5831344  0.3590136  0.94576437
+[2020/07/03-23:49:20.128] [null-err-38] [INFO] [dku.utils]  -  0.93991653 0.71112343 0.81034251 0.7107418  0.87938151 0.98938151
+[2020/07/03-23:49:20.129] [null-err-38] [INFO] [dku.utils]  -  0.88838831 0.80671446 0.7467887  0.96333006 0.89831925 0.64309301
+[2020/07/03-23:49:20.130] [null-err-38] [INFO] [dku.utils]  -  0.96834878 0.59918813 0.78530792 0.67068791 0.89328798 0.98108784
+[2020/07/03-23:49:20.131] [null-err-38] [INFO] [dku.utils]  -  0.73654151 0.73965984 0.57459111 0.57670784 0.7659135  0.84804346
+[2020/07/03-23:49:20.131] [null-err-38] [INFO] [dku.utils]  -  0.65895525 0.77368485 0.94363701 0.46805772 0.87441593 0.86249058
+[2020/07/03-23:49:20.132] [null-err-38] [INFO] [dku.utils]  -  0.12583205 0.81396262 0.83179146 0.94893766 0.79855727 0.97827488
+[2020/07/03-23:49:20.133] [null-err-38] [INFO] [dku.utils]  -  0.82276416 0.77315263 0.81252561 0.92429138 0.90247361 0.93108784
+[2020/07/03-23:49:20.133] [null-err-38] [INFO] [dku.utils]  -  0.66144191 0.85821119 0.84377086]
+[2020/07/03-23:49:20.134] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,121 INFO Class proba shape (81,)
+[2020/07/03-23:49:20.135] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,129 INFO Density for N (id 1)
+[2020/07/03-23:49:20.136] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,129 INFO valid_y shape = (113,)
+[2020/07/03-23:49:20.137] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,129 INFO CP: <type 'numpy.ndarray'> ((113,))
+[2020/07/03-23:49:20.137] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,130 INFO Actual shape = (113,)
+[2020/07/03-23:49:20.138] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,130 INFO MASK is <type 'numpy.ndarray'> 
+[2020/07/03-23:49:20.139] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,131 INFO Class proba [0.51316135 0.93521024 0.23544058 0.79989773 0.87179983 0.12577451
+[2020/07/03-23:49:20.140] [null-err-38] [INFO] [dku.utils]  -  0.95891216 0.12427804 0.461349   0.94046828 0.12006491 0.18725532
+[2020/07/03-23:49:20.140] [null-err-38] [INFO] [dku.utils]  -  0.25754071 0.31914211 0.34671841 0.27168465 0.27185753 0.30808089
+[2020/07/03-23:49:20.141] [null-err-38] [INFO] [dku.utils]  -  0.88685096 0.78744582 0.95102116 0.87740385 0.09725117 0.15339563
+[2020/07/03-23:49:20.142] [null-err-38] [INFO] [dku.utils]  -  0.27318279 0.36041842 0.96055288 0.86685096 0.2210545  0.11645951
+[2020/07/03-23:49:20.143] [null-err-38] [INFO] [dku.utils]  -  0.30076756 0.94370192]
+[2020/07/03-23:49:20.143] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,131 INFO Class proba shape (32,)
+[2020/07/03-23:49:20.266] [null-err-38] [INFO] [dku.utils]  - 2020-07-03 23:49:20,266 INFO END -  Scoring model
+[2020/07/03-23:49:20.404] [FRT-35-FlowRunnable] [INFO] [dku.ml.versioning] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Dumping version info {"trainedWithDSSVersion":"7.0.1","trainedWithDSSConfVersion":"7000","trainedWithDSSBackend":"PY_MEMORY","backendCompatibilityVersion":18} in /Volumes/DATA/dss_home/saved_models/LOADPREDICTION/2MHfrt8e/versions/1593794944858
+[2020/07/03-23:49:20.803] [FRT-35-FlowRunnable] [INFO] [dku.flow.activity] act.train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Run thread done for activity train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP
+[2020/07/03-23:49:21.006] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - activity is finished
+[2020/07/03-23:49:21.007] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Executing default post-activity lifecycle hook
+[2020/07/03-23:49:21.014] [ActivityExecutor-31] [INFO] [dip.cluster.selector] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Build cluster settings hadoop=__builtin__ k8s=__builtin__ authSource=USER_FROM_UI
+[2020/07/03-23:49:21.019] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Activity successful, computing metrics and running checks
+[2020/07/03-23:49:21.138] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Activity checks produced 0 values
+[2020/07/03-23:49:21.139] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Activity successful, final-committing: Thread[FRT-35-FlowRunnable,5,]
+[2020/07/03-23:49:21.141] [ActivityExecutor-31] [INFO] [dku.recipes.prediction.train] running train_Prediction__RANDOM_FOREST_CLASSIFICATION__on_train_prepared_NP - Setting new version as active scoring version
